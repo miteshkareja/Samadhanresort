@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samadhan Resort | Malvan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Smooth scrolling for navigation links */
+        html { scroll-behavior: smooth; }
+        /* Placeholder background for the hero section - replace URL with your own image */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-teal-600">Samadhan Resort</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="hover:text-teal-600 transition">About</a>
+                    <a href="#rooms" class="hover:text-teal-600 transition">Rooms</a>
+                    <a href="#experience" class="hover:text-teal-600 transition">Experience Malvan</a>
+                    <a href="#contact" class="hover:text-teal-600 transition">Contact</a>
+                </div>
+                <a href="#contact" class="bg-teal-600 text-white px-5 py-2 rounded shadow hover:bg-teal-700 transition">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-bg h-screen flex items-center justify-center text-center mt-16 md:mt-0">
+        <div class="text-white px-4">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">Welcome to Samadhan Resort</h1>
+            <p class="text-xl md:text-2xl mb-8">Your peaceful escape in the heart of Malvan.</p>
+            <a href="#rooms" class="bg-white text-teal-600 font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition shadow-lg">Explore Our Rooms</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900">Experience True Solace</h2>
+            <div class="w-24 h-1 bg-teal-600 mx-auto mt-4"></div>
+        </div>
+        <div class="md:flex md:space-x-12 items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Resort View" class="rounded-lg shadow-lg">
+            </div>
+            <div class="md:w-1/2">
+                <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                    Nestled in the coastal beauty of Malvan, Samadhan Resort offers the perfect blend of comfort, nature, and authentic Konkani hospitality. Whether you are looking to relax by pristine beaches, indulge in mouth-watering Malvani seafood, or explore the historic Sindhudurg Fort, we provide the perfect base for your vacation.
+                </p>
+                <ul class="space-y-3 text-gray-600">
+                    <li class="flex items-center">✓ 5 Minutes from the Beach</li>
+                    <li class="flex items-center">✓ Authentic Malvani Cuisine</li>
+                    <li class="flex items-center">✓ AC & Non-AC Comfortable Rooms</li>
+                    <li class="flex items-center">✓ Free High-Speed Wi-Fi</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="rooms" class="bg-gray-100 py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Our Accommodations</h2>
+                <div class="w-24 h-1 bg-teal-600 mx-auto mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gray-300"></div> <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Standard Room</h3>
+                        <p class="text-gray-600 mb-4">Cozy and comfortable, perfect for solo travelers or couples.</p>
+                        <button class="text-teal-600 font-semibold hover:underline">View Details →</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gray-300"></div> <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Deluxe AC Room</h3>
+                        <p class="text-gray-600 mb-4">Spacious rooms with modern amenities and air conditioning.</p>
+                        <button class="text-teal-600 font-semibold hover:underline">View Details →</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gray-300"></div> <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Family Suite</h3>
+                        <p class="text-gray-600 mb-4">Large space designed for families seeking a relaxing getaway together.</p>
+                        <button class="text-teal-600 font-semibold hover:underline">View Details →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-2xl font-bold text-teal-400 mb-4">Samadhan Resort</h3>
+                <p class="text-gray-400">Discover peace and authentic hospitality on the pristine coastline of Malvan.</p>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-4">Contact Us</h4>
+                <p class="text-gray-400 mb-2">📍 Tarkarli Road, Malvan, Maharashtra</p>
+                <p class="text-gray-400 mb-2">📞 +91 98765 43210</p>
+                <p class="text-gray-400">✉️ bookings@samadhanresort.com</p>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#about" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="#rooms" class="hover:text-white transition">Our Rooms</a></li>
+                    <li><a href="#" class="hover:text-white transition">Scuba Diving Packages</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 mt-12 pt-8 border-t border-gray-800">
+            &copy; 2026 Samadhan Resort Malvan. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
