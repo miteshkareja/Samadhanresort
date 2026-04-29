@@ -3,126 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samadhan Resort | Malvan</title>
+    <title>Samadhan Beach Resort | Sea-Touch Stay in Malvan</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Smooth scrolling for navigation links */
-        html { scroll-behavior: smooth; }
-        /* Placeholder background for the hero section - replace URL with your own image */
+        html { scroll-behavior: smooth; font-family: 'Poppins', sans-serif; }
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('malvan_beach.jpeg');
             background-size: cover;
             background-position: center;
         }
+        .faq-item:hover { cursor: pointer; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-slate-50 text-gray-800">
 
-    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <div class="text-2xl font-bold text-teal-600">Samadhan Resort</div>
-                <div class="hidden md:flex space-x-6">
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center py-3">
+                <div class="flex items-center gap-3">
+                    <img src="samadhan_logo.png" alt="Samadhan Logo" class="h-12">
+                    <span class="text-xl font-bold text-teal-700 hidden sm:block">Samadhan Resort</span>
+                </div>
+                <div class="hidden lg:flex space-x-8 font-medium">
                     <a href="#about" class="hover:text-teal-600 transition">About</a>
                     <a href="#rooms" class="hover:text-teal-600 transition">Rooms</a>
-                    <a href="#experience" class="hover:text-teal-600 transition">Experience Malvan</a>
-                    <a href="#contact" class="hover:text-teal-600 transition">Contact</a>
+                    <a href="#activities" class="hover:text-teal-600 transition">Activities</a>
+                    <a href="#faq" class="hover:text-teal-600 transition">FAQ</a>
                 </div>
-                <a href="#contact" class="bg-teal-600 text-white px-5 py-2 rounded shadow hover:bg-teal-700 transition">Book Now</a>
+                <a href="https://wa.me/919004420324" class="bg-teal-600 text-white px-6 py-2.5 rounded-full font-semibold shadow-md hover:bg-teal-700 transition">Book Now</a>
             </div>
         </div>
     </nav>
 
-    <section class="hero-bg h-screen flex items-center justify-center text-center mt-16 md:mt-0">
-        <div class="text-white px-4">
-            <h1 class="text-5xl md:text-6xl font-bold mb-4">Welcome to Samadhan Resort</h1>
-            <p class="text-xl md:text-2xl mb-8">Your peaceful escape in the heart of Malvan.</p>
-            <a href="#rooms" class="bg-white text-teal-600 font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition shadow-lg">Explore Our Rooms</a>
+    <section class="hero-bg h-screen flex items-center justify-center text-center">
+        <div class="text-white px-4 max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">Experience Zero-Distance Sea View</h1>
+            <p class="text-xl md:text-2xl mb-10 font-light drop-shadow-md">Located on the pristine Wairy-Tarkarli Road, where the waves meet your doorstep.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#rooms" class="bg-white text-teal-700 px-8 py-3 rounded-full font-bold hover:bg-teal-50 transition shadow-xl">View Our Rooms</a>
+                <a href="#activities" class="bg-teal-600 text-white px-8 py-3 rounded-full font-bold hover:bg-teal-700 transition shadow-xl">Explore Activities</a>
+            </div>
         </div>
     </section>
 
-    <section id="about" class="py-20 max-w-6xl mx-auto px-4">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-gray-900">Experience True Solace</h2>
-            <div class="w-24 h-1 bg-teal-600 mx-auto mt-4"></div>
-        </div>
-        <div class="md:flex md:space-x-12 items-center">
-            <div class="md:w-1/2 mb-8 md:mb-0">
-                <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Resort View" class="rounded-lg shadow-lg">
-            </div>
-            <div class="md:w-1/2">
-                <p class="text-lg text-gray-600 leading-relaxed mb-6">
-                    Nestled in the coastal beauty of Malvan, Samadhan Resort offers the perfect blend of comfort, nature, and authentic Konkani hospitality. Whether you are looking to relax by pristine beaches, indulge in mouth-watering Malvani seafood, or explore the historic Sindhudurg Fort, we provide the perfect base for your vacation.
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-6 leading-tight">Konkani Hospitality at the <span class="text-teal-600">Edge of the Ocean</span></h2>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    Welcome to Samadhan Resort, a family-friendly oasis in Malvan. What makes us unique? Our **Sea Touch rooms** offer an unparalleled connection to nature. Located just 2.5 km from the city center, we provide a peaceful escape with authentic homemade Malvani cuisine.
                 </p>
-                <ul class="space-y-3 text-gray-600">
-                    <li class="flex items-center">✓ 5 Minutes from the Beach</li>
-                    <li class="flex items-center">✓ Authentic Malvani Cuisine</li>
-                    <li class="flex items-center">✓ AC & Non-AC Comfortable Rooms</li>
-                    <li class="flex items-center">✓ Free High-Speed Wi-Fi</li>
-                </ul>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="p-4 bg-teal-50 rounded-xl border border-teal-100">
+                        <span class="text-teal-700 font-bold block text-2xl">0 km</span>
+                        <span class="text-gray-500 text-sm italic">Distance to Beach</span>
+                    </div>
+                    <div class="p-4 bg-teal-50 rounded-xl border border-teal-100">
+                        <span class="text-teal-700 font-bold block text-2xl">24/7</span>
+                        <span class="text-gray-500 text-sm italic">Hot Water (On Request)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="malvan_beach1.jpeg" alt="Malvan Beach" class="rounded-2xl shadow-2xl z-10 relative">
+                <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-teal-600/10 rounded-full -z-0"></div>
             </div>
         </div>
     </section>
 
-    <section id="rooms" class="bg-gray-100 py-20">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900">Our Accommodations</h2>
-                <div class="w-24 h-1 bg-teal-600 mx-auto mt-4"></div>
+    <section id="rooms" class="bg-slate-100 py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Accommodations</h2>
+                <p class="text-gray-500">AC and Non-AC types available with stunning sea views</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="h-48 bg-gray-300"></div> <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Standard Room</h3>
-                        <p class="text-gray-600 mb-4">Cozy and comfortable, perfect for solo travelers or couples.</p>
-                        <button class="text-teal-600 font-semibold hover:underline">View Details →</button>
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
+                    <div class="h-64 overflow-hidden">
+                        <img src="room1.webp" alt="Deluxe Room" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Sea View Deluxe</h3>
+                        <p class="text-gray-600 text-sm mb-4">Wake up to the sound of waves. Features modern AC and Wi-Fi.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-gray-100 text-xs font-semibold rounded-full uppercase">AC</span>
+                            <span class="px-3 py-1 bg-gray-100 text-xs font-semibold rounded-full uppercase">Wi-Fi</span>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="h-48 bg-gray-300"></div> <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Deluxe AC Room</h3>
-                        <p class="text-gray-600 mb-4">Spacious rooms with modern amenities and air conditioning.</p>
-                        <button class="text-teal-600 font-semibold hover:underline">View Details →</button>
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
+                    <div class="h-64 overflow-hidden">
+                        <img src="room2.webp" alt="Standard Room" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Comfort Stay</h3>
+                        <p class="text-gray-600 text-sm mb-4">A familiar atmosphere perfect for families and couples.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-gray-100 text-xs font-semibold rounded-full uppercase">Non-AC</span>
+                            <span class="px-3 py-1 bg-gray-100 text-xs font-semibold rounded-full uppercase">Sea View</span>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="h-48 bg-gray-300"></div> <div class="p-6">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
+                    <div class="h-64 overflow-hidden">
+                        <img src="room3.webp" alt="Family Room" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Family Suite</h3>
-                        <p class="text-gray-600 mb-4">Large space designed for families seeking a relaxing getaway together.</p>
-                        <button class="text-teal-600 font-semibold hover:underline">View Details →</button>
+                        <p class="text-gray-600 text-sm mb-4">Large spacious rooms with extra beds available (chargeable).</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-gray-100 text-xs font-semibold rounded-full uppercase">Spacious</span>
+                            <span class="px-3 py-1 bg-gray-100 text-xs font-semibold rounded-full uppercase">Group Friendly</span>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 mt-8">
+                <img src="room4.webp" class="rounded-2xl h-64 w-full object-cover shadow-md" alt="Room 4">
+                <img src="room5.webp" class="rounded-2xl h-64 w-full object-cover shadow-md" alt="Room 5">
+            </div>
+        </div>
+    </section>
+
+    <section id="activities" class="py-24 px-6 max-w-7xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-4 italic">Adventure & Experience</h2>
+        <p class="text-gray-500 mb-16">Explore the best of Malvan through our brother concerns</p>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="space-y-4">
+                <img src="scoba.jpg" class="w-full h-48 object-cover rounded-xl shadow-lg" alt="Scuba">
+                <h4 class="font-bold">Scuba Diving</h4>
+            </div>
+            <div class="space-y-4">
+                <img src="paragliding.jpg" class="w-full h-48 object-cover rounded-xl shadow-lg" alt="Paragliding">
+                <h4 class="font-bold">Watersports</h4>
+            </div>
+            <div class="space-y-4">
+                <img src="boating.jpg" class="w-full h-48 object-cover rounded-xl shadow-lg" alt="Boating">
+                <h4 class="font-bold">Dolphin Safari</h4>
+            </div>
+            <div class="flex flex-col items-center justify-center bg-teal-50 rounded-xl p-6 border-2 border-dashed border-teal-200">
+                <div class="text-4xl mb-2">🏸</div>
+                <h4 class="font-bold text-teal-800 uppercase text-sm tracking-widest">Inside Activities</h4>
+                <p class="text-xs text-teal-600 mt-2">Badminton & Basic Games Available</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="bg-white py-24 px-6">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="faq-item border-b pb-4" onclick="this.classList.toggle('active')">
+                    <div class="flex justify-between items-center font-semibold text-lg text-teal-700">
+                        Which is the nearest beach?
+                        <span class="text-xl">+</span>
+                    </div>
+                    <div class="faq-answer hidden mt-2 text-gray-600">We are located exactly at Wairy/Tarkarli beach. Distance is Zero (Sea touch). Devbag is 3km away.</div>
+                </div>
+                <div class="faq-item border-b pb-4" onclick="this.classList.toggle('active')">
+                    <div class="flex justify-between items-center font-semibold text-lg text-teal-700">
+                        How to reach from Mumbai?
+                        <span class="text-xl">+</span>
+                    </div>
+                    <div class="faq-answer hidden mt-2 text-gray-600">You can arrive by train to Kudal Stn (30km), Sindhudurg Stn, or Kankavli. Alternatively, use Chipi Airport or Bus/Travels. We provide pickup services via rental cars.</div>
+                </div>
+                <div class="faq-item border-b pb-4" onclick="this.classList.toggle('active')">
+                    <div class="flex justify-between items-center font-semibold text-lg text-teal-700">
+                        Is food provided?
+                        <span class="text-xl">+</span>
+                    </div>
+                    <div class="faq-answer hidden mt-2 text-gray-600">Yes, we serve authentic homemade Malvani Veg and Non-veg food. Jain options are available on request. Outside food is not allowed.</div>
+                </div>
+                <div class="faq-item border-b pb-4" onclick="this.classList.toggle('active')">
+                    <div class="flex justify-between items-center font-semibold text-lg text-teal-700">
+                        What is the booking & cancellation policy?
+                        <span class="text-xl">+</span>
+                    </div>
+                    <div class="faq-answer hidden mt-2 text-gray-600">50% advance payment is required. Cancellation must be made at least 7 days before your booking date.</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="bg-gray-900 text-white py-12">
-        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+    <footer class="bg-gray-900 text-gray-300 py-16 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
             <div>
-                <h3 class="text-2xl font-bold text-teal-400 mb-4">Samadhan Resort</h3>
-                <p class="text-gray-400">Discover peace and authentic hospitality on the pristine coastline of Malvan.</p>
+                <img src="samadhan_logo.png" alt="Footer Logo" class="h-16 mb-6 brightness-0 invert">
+                <p class="text-sm leading-relaxed">Nestled in Wairy, Malvan, we offer the best Konkani hospitality with a sea-touch experience. Perfect for families and couples.</p>
             </div>
             <div>
-                <h4 class="text-xl font-bold mb-4">Contact Us</h4>
-                <p class="text-gray-400 mb-2">📍 Tarkarli Road, Malvan, Maharashtra</p>
-                <p class="text-gray-400 mb-2">📞 +91 91372 34477 </p>
-                <p class="text-gray-400 mb-2">💬 <a href="https://wa.me/919004420324" target="_blank" class="hover:text-green-400 transition">WhatsApp: +91 90044 20324</a></p>
-                
-                <p class="text-gray-400">✉️ bookings@samadhanresort.com</p>
+                <h4 class="text-white font-bold text-xl mb-6 underline decoration-teal-500 underline-offset-8">Visit Us</h4>
+                <p class="text-sm mb-2">📍 Wairy-Tarkarli Road, Malvan, Maharashtra</p>
+                <p class="text-sm mb-2">🚂 Nearest Station: Kudal (30 km)</p>
+                <p class="text-sm">✈️ Nearest Airport: Chipi</p>
             </div>
             <div>
-                <h4 class="text-xl font-bold mb-4">Quick Links</h4>
-                <ul class="space-y-2 text-gray-400">
-                    <li><a href="#about" class="hover:text-white transition">About Us</a></li>
-                    <li><a href="#rooms" class="hover:text-white transition">Our Rooms</a></li>
-                    <li><a href="#" class="hover:text-white transition">Scuba Diving Packages</a></li>
-                </ul>
+                <h4 class="text-white font-bold text-xl mb-6 underline decoration-teal-500 underline-offset-8">Contact</h4>
+                <p class="text-sm mb-2">📞 <a href="tel:+919137234477" class="hover:text-teal-400">+91 91372 34477</a></p>
+                <p class="text-sm mb-4">💬 <a href="https://wa.me/919004420324" class="hover:text-green-400">WhatsApp: +91 90044 20324</a></p>
+                <div class="flex space-x-4">
+                    <span class="bg-white/10 p-2 rounded-full text-xs">9:30 AM Checkout</span>
+                    <span class="bg-white/10 p-2 rounded-full text-xs">11:00 AM Check-in</span>
+                </div>
             </div>
         </div>
-        <div class="text-center text-gray-500 mt-12 pt-8 border-t border-gray-800">
-            &copy; 2026 Samadhan Resort Malvan. All rights reserved.
+        <div class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 text-center text-xs text-gray-500">
+            &copy; 2026 Samadhan Beach Resort. All images and content belong to the resort management.
         </div>
     </footer>
 
+    <script>
+        // Simple FAQ Toggle Logic
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.querySelector('.faq-answer');
+                const span = item.querySelector('span');
+                if(answer.classList.contains('hidden')) {
+                    answer.classList.remove('hidden');
+                    span.textContent = '-';
+                } else {
+                    answer.classList.add('hidden');
+                    span.textContent = '+';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
