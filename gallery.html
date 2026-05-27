@@ -1,1 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Samadhan Beach Resort Malvan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(15,23,42,0.4) 0%, rgba(15,23,42,0.8) 100%);
+        }
+        .section-pattern {
+            background-image: radial-gradient(circle at 1px 1px, rgba(234,88,12,0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        /* Masonry fallback styles */
+        .gallery-image {
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-slate-800">
 
+    <nav class="glass fixed w-full z-50 top-0 border-b border-stone-200/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center py-2">
+                <div class="flex items-center gap-3">
+                    <img src="samadhan_logo.png" alt="Samadhan Logo" class="h-16 md:h-20 rounded-md object-contain">
+                    <span class="text-2xl font-bold text-slate-900 hidden sm:block tracking-tight">Samadhan Resort</span>
+                </div>
+                <div class="hidden lg:flex space-x-8 text-sm items-center font-medium text-slate-600">
+                    <a href="index.html" class="hover:text-orange-600 transition">Home</a>
+                    <a href="about.html" class="hover:text-orange-600 transition">About Us</a>
+                    <a href="water-sports.html" class="hover:text-orange-600 transition">Water Sports</a>
+                    <a href="things-to-do.html" class="hover:text-orange-600 transition">Things to do</a>
+                    <a href="gallery.html" class="text-orange-600 font-semibold transition">Gallery</a>
+                    <a href="#contact" class="hover:text-orange-600 transition">Contact Us</a>
+                </div>
+                <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20make%20a%20general%20booking%20inquiry." target="_blank" 
+                   class="bg-gradient-to-r from-orange-600 to-red-600 text-white px-7 py-2.5 rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                   Book Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative h-[50vh] flex items-center justify-center text-center overflow-hidden mt-16">
+        <img src="malvan_beach1.jpeg" class="absolute top-0 left-0 w-full h-full object-cover z-0" alt="Gallery Background">
+        <div class="absolute top-0 left-0 w-full h-full hero-overlay z-10"></div>
+        
+        <div class="relative z-20 text-white px-4 max-w-4xl mt-10">
+            <p class="text-sm md:text-base uppercase tracking-[0.3em] font-medium text-orange-200 mb-4">Visual Journey</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 drop-shadow-2xl leading-tight">Our Gallery</h1>
+            <p class="text-lg md:text-xl font-light text-stone-200 max-w-2xl mx-auto leading-relaxed">Take a glimpse into the beautiful rooms, thrilling activities, and stunning scenery that await you at Samadhan Resort.</p>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-7xl mx-auto section-pattern">
+        <div class="mb-12 border-l-4 border-orange-500 pl-4">
+            <h2 class="text-4xl font-bold text-slate-900">Resort & Rooms</h2>
+            <p class="text-slate-500 mt-2">Experience comfort right on the beach.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="gallery-item overflow-hidden rounded-3xl shadow-lg relative group aspect-[4/3] card-lift bg-white">
+                <img src="room1.webp" alt="Sea View Room" class="gallery-image w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 text-white">
+                    <span class="font-semibold tracking-wide">Premium Sea View</span>
+                </div>
+            </div>
+            <div class="gallery-item overflow-hidden rounded-3xl shadow-lg relative group aspect-[4/3] card-lift bg-white">
+                <img src="room2.webp" alt="Comfort Room" class="gallery-image w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 text-white">
+                    <span class="font-semibold tracking-wide">Comfort Non-AC</span>
+                </div>
+            </div>
+            <div class="gallery-item overflow-hidden rounded-3xl shadow-lg relative group aspect-[4/3] card-lift bg-white">
+                <img src="room3.webp" alt="Family Suite" class="gallery-image w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 text-white">
+                    <span class="font-semibold tracking-wide">Spacious Family Suite</span>
+                </div>
+            </div>
+            <div class="gallery-item overflow-hidden rounded-3xl shadow-lg relative group aspect-[4/3] card-lift bg-white md:col-span-2">
+                <img src="malvan_beach.jpeg" alt="Resort Beach View" class="gallery-image w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 text-white">
+                    <span class="font-semibold tracking-wide">Zero-Distance Beach Front</span>
+                </div>
+            </div>
+            <div class="gallery-item overflow-hidden rounded-3xl shadow-lg relative group aspect-[4/3] card-lift bg-white">
+                <img src="room4.webp" alt="Room Interior" class="gallery-image w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 text-white">
+                    <span class="font-semibold tracking-wide">Cozy Interiors</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-7xl mx-auto border-t border-stone-200">
+        <div class="mb-12 border-l-4 border-orange-500 pl-4">
+            <h2 class="text-4xl font-bold text-slate-900">Thrilling Adventures</h2>
+            <p class="text-slate-500 mt-2">Action-packed moments on the Arabian Sea.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="gallery-item overflow-hidden rounded-3xl shadow-lg relative group aspect-square card-lift bg-white">
+                <img src="scuba.png" alt="Scuba Diving" class="gallery-image w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 text-white">
+                    <span class="font-semibold tracking-wide">Scuba Diving</span>
+                </div>
+            </div>
+            <div class="gallery-item overflow-hidden rounded-3xl shadow-lg relative group aspect-square card-lift bg-white">
+                <img src="parasailing.png" alt="Parasailing" class="gallery-image w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 text-white">
+                    <span class="font-semibold tracking-wide">Parasailing</span>
+                </div>
+            </div>
+            <div class="gallery-item overflow-hidden rounded-3xl shadow-lg relative group aspect-square card-lift bg-white">
+                <img src="bananaboat.png" alt="Banana Boat Ride" class="gallery-image w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 text-white">
+                    <span class="font-semibold tracking-wide">Banana Boat</span>
+                </div>
+            </div>
+            <div class="gallery-item overflow-hidden rounded-3xl shadow-lg relative group aspect-square card-lift bg-white">
+                <img src="boating.jpg" alt="Bumper Ride" class="gallery-image w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 text-white">
+                    <span class="font-semibold tracking-wide">Bumper Ride</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-7xl mx-auto border-t border-stone-200 mb-10">
+        <div class="mb-12 border-l-4 border-orange-500 pl-4">
+            <h2 class="text-4xl font-bold text-slate-900">Local Attractions</h2>
+            <p class="text-slate-500 mt-2">Discover the beauty and heritage of Malvan.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="gallery-item overflow-hidden rounded-3xl shadow-lg relative group aspect-[4/3] card-lift bg-white">
+                <img src="fort.jpg" alt="Sindhudurg Fort" class="gallery-image w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 text-white">
+                    <span class="font-semibold tracking-wide">Sindhudurg Fort</span>
+                </div>
+            </div>
+            <div class="gallery-item overflow-hidden rounded-3xl shadow-lg relative group aspect-[4/3] card-lift bg-white">
+                <img src="dolphin-watching.jpg" alt="Dolphin Safari" class="gallery-image w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 text-white">
+                    <span class="font-semibold tracking-wide">Dolphin Safari</span>
+                </div>
+            </div>
+            <div class="gallery-item overflow-hidden rounded-3xl shadow-lg relative group aspect-[4/3] card-lift bg-white">
+                <img src="tarkarli-beach.jpg" alt="Tarkarli Beach" class="gallery-image w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 text-white">
+                    <span class="font-semibold tracking-wide">Tarkarli Beach</span>
+                </div>
+            </div>
+            <div class="gallery-item overflow-hidden rounded-3xl shadow-lg relative group aspect-[4/3] card-lift bg-white">
+                <img src="mhatarichi_chul.jpg" alt="Rock Garden" class="gallery-image w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 text-white">
+                    <span class="font-semibold tracking-wide">Mhatarichi Chul / Rock Garden</span>
+                </div>
+            </div>
+            <div class="gallery-item overflow-hidden rounded-3xl shadow-lg relative group aspect-[4/3] card-lift bg-white md:col-span-2">
+                <img src="jai-ganesh-mandir-at.jpg" alt="Jay Ganesh Mandir" class="gallery-image w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 text-white">
+                    <span class="font-semibold tracking-wide">Jay Ganesh Mandir</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-950 text-slate-400 py-20 px-6 relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-px bg-gradient-to-r from-transparent via-orange-500/50 to-transparent"></div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-16 relative z-10">
+            <div>
+                <img src="samadhan_logo.png" alt="Footer Logo" class="h-20 mb-6 rounded-md object-contain">
+                <p class="text-sm leading-relaxed text-slate-400">Nestled in Wairy, Malvan, we offer the best Konkani hospitality with a sea-touch experience. Perfect for families and couples looking for a peaceful getaway.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-xl mb-6">Visit Us</h4>
+                <div class="space-y-4 text-sm">
+                    <div class="flex items-start gap-3">
+                        <span class="text-orange-500 mt-0.5">📍</span>
+                        <div class="flex flex-col">
+                            <span>Wairy-Tarkarli Road, Malvan, Maharashtra</span>
+                            <a href="https://www.google.com/maps?hl=en-GB&mat=CVMrlhQUKs1LElcBTVDHnvMVyMJ5Y5zA2FI7AC1-ZVOFR__IisJlEAxhOQX7nY61M885HIr2EyxChqRk01IEYC-sadP7eLa1C6SmNyRgNn6L3Uwn6i4ELJupcCGBHtsqDbc&authuser=0&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=Ke_KpAQgA8A7MRcsdwhtdGvP&daddr=Shivaji+Chowk,+Tarkarli+Road,+Teli+Panand,+Malvan,+Maharashtra+416606" target="_blank" class="text-orange-500 hover:text-orange-400 mt-1 font-semibold text-xs">View on Google Maps ↗</a>
+                        </div>
+                    </div>
+                    <p class="flex items-start gap-3">
+                        <span class="text-orange-500 mt-0.5">🚂</span>
+                        <span>Nearest Station: Kudal (30 km)</span>
+                    </p>
+                    <p class="flex items-start gap-3">
+                        <span class="text-orange-500 mt-0.5">✈️</span>
+                        <span>Nearest Airport: Chipi</span>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-xl mb-6">Contact For Booking</h4>
+                <div class="space-y-3 text-sm mb-8">
+                    <p class="flex items-center gap-3">
+                        <span class="text-orange-500">📞</span>
+                        <a href="tel:+919137234477" class="hover:text-orange-400 transition text-slate-300">+91 91372 34477</a>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="text-orange-500">💬</span>
+                        <a href="https://wa.me/919137234477?text=Hi,%20I%20have%20an%20inquiry%20about%20Samadhan%20Resort." class="hover:text-green-400 transition text-slate-300" target="_blank">WhatsApp: +91 91372 34477</a>
+                    </p>
+                </div>
+                
+                <h5 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Policies</h5>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs">9:30 AM Checkout</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs">11:00 AM Check-in</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs">50% Advance Required</span>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 pt-8 text-center text-xs text-slate-600 border-t border-white/5">
+            © 2026 Samadhan Beach Resort. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
