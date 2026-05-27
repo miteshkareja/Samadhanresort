@@ -5,328 +5,491 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samadhan Beach Resort | Sea-Touch Stay in Malvan</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
-        html { scroll-behavior: smooth; font-family: 'Poppins', sans-serif; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .glass-dark {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+        }
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(15,23,42,0.3) 0%, rgba(15,23,42,0.6) 100%);
+        }
+        .section-pattern {
+            background-image: radial-gradient(circle at 1px 1px, rgba(234,88,12,0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
     </style>
 </head>
-<body class="bg-slate-50 text-gray-800">
+<body class="bg-stone-50 text-slate-800">
 
-    <nav class="bg-white/95 backdrop-blur-md shadow-sm fixed w-full z-50 top-0">
+    <!-- Navigation -->
+    <nav class="glass fixed w-full z-50 top-0 border-b border-stone-200/50">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="flex justify-between items-center py-3">
+            <div class="flex justify-between items-center py-4">
                 <div class="flex items-center gap-3">
                     <img src="samadhan_logo.png" alt="Samadhan Logo" class="h-12">
-                    <span class="text-xl font-bold text-teal-700 hidden sm:block">Samadhan Resort</span>
+                    <span class="text-xl font-bold text-slate-900 hidden sm:block tracking-tight">Samadhan Resort</span>
                 </div>
-                <div class="hidden lg:flex space-x-6 font-medium text-sm items-center">
-                    <a href="index.html" class="text-teal-600 font-bold transition">Home</a>
-                    <a href="about.html" class="hover:text-teal-600 transition">About Us</a>
-                    <a href="watersports.html" class="hover:text-teal-600 transition">Water Sports</a>
-                    <a href="thingstodo.html" class="hover:text-teal-600 transition">Things to do</a>
-                    <a href="gallery.html" class="hover:text-teal-600 transition">Gallery</a>
-                    <a href="#contact" class="hover:text-teal-600 transition">Contact Us</a>
+                <div class="hidden lg:flex space-x-8 text-sm items-center font-medium text-slate-600">
+                    <a href="index.html" class="text-orange-600 font-semibold transition">Home</a>
+                    <a href="about.html" class="hover:text-orange-600 transition">About Us</a>
+                    <a href="watersports.html" class="hover:text-orange-600 transition">Water Sports</a>
+                    <a href="thingstodo.html" class="hover:text-orange-600 transition">Things to do</a>
+                    <a href="gallery.html" class="hover:text-orange-600 transition">Gallery</a>
+                    <a href="#contact" class="hover:text-orange-600 transition">Contact Us</a>
                 </div>
-                <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20make%20a%20general%20booking%20inquiry." target="_blank" class="bg-teal-600 text-white px-6 py-2.5 rounded-full font-semibold shadow-md hover:bg-teal-700 transition">Book Now</a>
+                <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20make%20a%20general%20booking%20inquiry." target="_blank" 
+                   class="bg-gradient-to-r from-orange-600 to-red-600 text-white px-7 py-2.5 rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                   Book Now
+                </a>
             </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="home" class="relative h-screen flex items-center justify-center text-center overflow-hidden">
         <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
             <source src="herosection_background.mp4" type="video/mp4">
         </video>
-        <div class="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
+        <div class="absolute top-0 left-0 w-full h-full hero-overlay z-10"></div>
         
-        <div class="relative z-20 text-white px-4 max-w-4xl mt-16">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">Where the Waves Meet Your Doorstep</h1>
-            <p class="text-xl md:text-2xl mb-10 font-light drop-shadow-md">Experience true zero-distance sea-touch living on the pristine Wairy-Tarkarli Road.</p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#rooms" class="bg-white text-teal-700 px-8 py-3 rounded-full font-bold hover:bg-teal-50 transition shadow-xl">View Rooms</a>
-                <a href="#watersports" class="bg-teal-600 text-white px-8 py-3 rounded-full font-bold hover:bg-teal-700 transition shadow-xl">Explore Activities</a>
+        <div class="relative z-20 text-white px-4 max-w-5xl mt-16">
+            <p class="text-sm md:text-base uppercase tracking-[0.3em] font-medium text-orange-200 mb-4">Wairy Beach, Malvan</p>
+            <h1 class="text-5xl md:text-8xl font-bold mb-6 drop-shadow-2xl leading-tight">Where the Waves Meet Your Doorstep</h1>
+            <p class="text-lg md:text-2xl mb-12 font-light text-stone-200 max-w-3xl mx-auto leading-relaxed">Experience true zero-distance sea-touch living on the pristine Wairy-Tarkarli Road.</p>
+            <div class="flex flex-wrap justify-center gap-5">
+                <a href="#rooms" class="bg-white text-slate-900 px-8 py-3.5 rounded-full font-semibold hover:bg-stone-100 transition shadow-2xl flex items-center gap-2">
+                    <span>View Rooms</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </a>
+                <a href="#watersports" class="bg-white/10 border border-white/30 text-white px-8 py-3.5 rounded-full font-semibold hover:bg-white/20 transition shadow-xl backdrop-blur-sm">
+                    Explore Activities
+                </a>
             </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+            <svg class="w-6 h-6 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
         </div>
     </section>
 
-    <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-                <h2 class="text-teal-600 font-bold uppercase tracking-wider text-sm mb-2">Welcome to Samadhan</h2>
-                <h3 class="text-4xl font-bold text-gray-900 mb-6 leading-tight">Authentic Konkani Hospitality at the Edge of the Ocean</h3>
-                <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                    Nestled in the heart of Malvan, Samadhan Resort is a family-friendly oasis. We pride ourselves on offering a unique **"Sea Touch"** experience. Located just 2.5 km from the city center, you can step out of your room directly onto the soft sands of Wairy Beach. 
+    <!-- About Section -->
+    <section id="about" class="py-28 px-6 max-w-7xl mx-auto section-pattern">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <div class="order-2 lg:order-1 relative group">
+                <div class="absolute -inset-4 bg-gradient-to-r from-orange-100 to-red-100 rounded-[2rem] rotate-2 group-hover:rotate-1 transition duration-500"></div>
+                <img src="malvan_beach1.jpeg" alt="Malvan Beach Resort" class="relative rounded-2xl shadow-2xl w-full object-cover h-[500px]">
+                <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl max-w-xs">
+                    <p class="text-4xl font-bold text-orange-600">2.5 km</p>
+                    <p class="text-slate-500 text-sm mt-1">from Malvan city center</p>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="h-px w-12 bg-orange-500"></div>
+                    <span class="text-orange-600 font-semibold uppercase tracking-wider text-sm">Welcome to Samadhan</span>
+                </div>
+                <h2 class="text-5xl font-bold text-slate-900 mb-8 leading-tight">Authentic Konkani Hospitality at the Edge of the Ocean</h2>
+                <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                    Nestled in the heart of Malvan, Samadhan Resort is a family-friendly oasis. We pride ourselves on offering a unique <strong>"Sea Touch"</strong> experience. Located just 2.5 km from the city center, you can step out of your room directly onto the soft sands of Wairy Beach.
                 </p>
-                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                <p class="text-lg text-slate-600 mb-10 leading-relaxed">
                     Whether you are here for the thrilling water sports, the peaceful sunsets, or our mouth-watering homemade Malvani cuisine, we ensure your stay is memorable and comfortable.
                 </p>
-            </div>
-            <div class="relative">
-                <img src="malvan_beach1.jpeg" alt="Malvan Beach Resort" class="rounded-2xl shadow-2xl z-10 relative border-4 border-white">
-                <div class="absolute -bottom-6 -left-6 w-48 h-48 bg-teal-100 rounded-full -z-0"></div>
+                <div class="flex gap-8">
+                    <div>
+                        <p class="text-3xl font-bold text-slate-900">5★</p>
+                        <p class="text-slate-500 text-sm">Google Rating</p>
+                    </div>
+                    <div class="h-12 w-px bg-stone-200"></div>
+                    <div>
+                        <p class="text-3xl font-bold text-slate-900">0m</p>
+                        <p class="text-slate-500 text-sm">From Beach</p>
+                    </div>
+                    <div class="h-12 w-px bg-stone-200"></div>
+                    <div>
+                        <p class="text-3xl font-bold text-slate-900">24/7</p>
+                        <p class="text-slate-500 text-sm">Service</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-teal-800 text-white py-20 px-6">
-        <div class="max-w-7xl mx-auto">
+    <!-- Features Section -->
+    <section class="bg-slate-900 text-white py-24 px-6 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10">
+            <div class="absolute top-10 left-10 w-72 h-72 bg-orange-500 rounded-full blur-[100px]"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 bg-red-500 rounded-full blur-[120px]"></div>
+        </div>
+        <div class="max-w-7xl mx-auto relative z-10">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-4">Why Choose Us?</h2>
-                <p class="text-teal-200">Everything you need for a perfect beach holiday.</p>
+                <span class="text-orange-400 font-medium uppercase tracking-wider text-sm">Resort Features</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-3">Why Choose Us?</h2>
+                <p class="text-slate-400 mt-4 max-w-xl mx-auto text-lg">Everything you need for a perfect beach holiday.</p>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
-                <div class="p-4 bg-teal-700/50 rounded-xl">
-                    <div class="text-3xl mb-3">🌊</div>
-                    <h4 class="font-bold text-sm">Zero Distance Beach</h4>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition duration-300 text-center group">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition">🌊</div>
+                    <h4 class="font-semibold text-sm">Zero Distance Beach</h4>
                 </div>
-                <div class="p-4 bg-teal-700/50 rounded-xl">
-                    <div class="text-3xl mb-3">❄️</div>
-                    <h4 class="font-bold text-sm">AC & Non-AC Rooms</h4>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition duration-300 text-center group">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition">❄️</div>
+                    <h4 class="font-semibold text-sm">AC & Non-AC Rooms</h4>
                 </div>
-                <div class="p-4 bg-teal-700/50 rounded-xl">
-                    <div class="text-3xl mb-3">🍛</div>
-                    <h4 class="font-bold text-sm">Authentic Malvani Food</h4>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition duration-300 text-center group">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition">🍛</div>
+                    <h4 class="font-semibold text-sm">Authentic Malvani Food</h4>
                 </div>
-                <div class="p-4 bg-teal-700/50 rounded-xl">
-                    <div class="text-3xl mb-3">🚿</div>
-                    <h4 class="font-bold text-sm">24/7 Hot Water</h4>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition duration-300 text-center group">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition">🚿</div>
+                    <h4 class="font-semibold text-sm">24/7 Hot Water</h4>
                 </div>
-                <div class="p-4 bg-teal-700/50 rounded-xl">
-                    <div class="text-3xl mb-3">📶</div>
-                    <h4 class="font-bold text-sm">Free Wi-Fi</h4>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition duration-300 text-center group">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition">📶</div>
+                    <h4 class="font-semibold text-sm">Free Wi-Fi</h4>
                 </div>
-                <div class="p-4 bg-teal-700/50 rounded-xl">
-                    <div class="text-3xl mb-3">🚗</div>
-                    <h4 class="font-bold text-sm">Safe Parking</h4>
+                <div class="p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition duration-300 text-center group">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition">🚗</div>
+                    <h4 class="font-semibold text-sm">Safe Parking</h4>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="rooms" class="bg-slate-100 py-24 px-6">
+    <!-- Rooms Section -->
+    <section id="rooms" class="bg-stone-100 py-28 px-6">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-teal-600 font-bold uppercase tracking-wider text-sm mb-2">Our Accommodations</h2>
-                <h3 class="text-4xl font-bold text-gray-900 mb-4">Wake Up to the Sound of Waves</h3>
+            <div class="text-center mb-20">
+                <span class="text-orange-600 font-semibold uppercase tracking-wider text-sm">Our Accommodations</span>
+                <h3 class="text-5xl font-bold text-slate-900 mt-3">Wake Up to the Sound of Waves</h3>
+                <div class="h-1 w-24 bg-gradient-to-r from-orange-500 to-red-500 mx-auto mt-6 rounded-full"></div>
             </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group flex flex-col">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="room1.webp" alt="Sea View Deluxe" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-xs font-bold text-teal-700">Sea View</div>
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Room 1 -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden card-lift flex flex-col">
+                    <div class="h-72 overflow-hidden relative">
+                        <img src="room1.webp" alt="Sea View Deluxe" class="w-full h-full object-cover transition duration-700 hover:scale-110">
+                        <div class="absolute top-5 right-5 bg-white/95 backdrop-blur px-4 py-1.5 rounded-full text-xs font-bold text-orange-700 shadow-lg">Sea View</div>
                     </div>
-                    <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div class="p-8 flex flex-col flex-grow justify-between">
                         <div>
-                            <h3 class="text-xl font-bold mb-2">Premium AC Room</h3>
-                            <p class="text-gray-600 text-sm mb-6">Modern amenities with a direct, uninterrupted view of the Arabian Sea.</p>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Premium AC Room</h3>
+                            <p class="text-slate-600 leading-relaxed">Modern amenities with a direct, uninterrupted view of the Arabian Sea.</p>
                         </div>
-                        <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20the%20Premium%20AC%20Room." target="_blank" class="block text-center bg-teal-600 text-white px-4 py-3 rounded-lg font-bold hover:bg-teal-700 transition">Book Room</a>
+                        <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20the%20Premium%20AC%20Room." target="_blank" 
+                           class="mt-6 block text-center bg-gradient-to-r from-orange-600 to-red-600 text-white px-4 py-3.5 rounded-xl font-semibold hover:shadow-lg hover:shadow-orange-500/30 transition-all duration-300">
+                           Book Room
+                        </a>
                     </div>
                 </div>
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group flex flex-col">
-                    <div class="h-64 overflow-hidden">
-                        <img src="room2.webp" alt="Comfort Stay" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <!-- Room 2 -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden card-lift flex flex-col">
+                    <div class="h-72 overflow-hidden">
+                        <img src="room2.webp" alt="Comfort Stay" class="w-full h-full object-cover transition duration-700 hover:scale-110">
                     </div>
-                    <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div class="p-8 flex flex-col flex-grow justify-between">
                         <div>
-                            <h3 class="text-xl font-bold mb-2">Comfort Non-AC</h3>
-                            <p class="text-gray-600 text-sm mb-6">Perfect for those who love to enjoy the natural, cool coastal sea breeze.</p>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Comfort Non-AC</h3>
+                            <p class="text-slate-600 leading-relaxed">Perfect for those who love to enjoy the natural, cool coastal sea breeze.</p>
                         </div>
-                        <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20the%20Comfort%20Non-AC%20Room." target="_blank" class="block text-center bg-teal-600 text-white px-4 py-3 rounded-lg font-bold hover:bg-teal-700 transition">Book Room</a>
+                        <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20the%20Comfort%20Non-AC%20Room." target="_blank" 
+                           class="mt-6 block text-center bg-gradient-to-r from-orange-600 to-red-600 text-white px-4 py-3.5 rounded-xl font-semibold hover:shadow-lg hover:shadow-orange-500/30 transition-all duration-300">
+                           Book Room
+                        </a>
                     </div>
                 </div>
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group flex flex-col">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="room3.webp" alt="Family Suite" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute top-4 right-4 bg-teal-600 px-3 py-1 rounded-full text-xs font-bold text-white">Spacious</div>
+                <!-- Room 3 -->
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden card-lift flex flex-col">
+                    <div class="h-72 overflow-hidden relative">
+                        <img src="room3.webp" alt="Family Suite" class="w-full h-full object-cover transition duration-700 hover:scale-110">
+                        <div class="absolute top-5 right-5 bg-gradient-to-r from-orange-600 to-red-600 px-4 py-1.5 rounded-full text-xs font-bold text-white shadow-lg">Spacious</div>
                     </div>
-                    <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div class="p-8 flex flex-col flex-grow justify-between">
                         <div>
-                            <h3 class="text-xl font-bold mb-2">Family Suite</h3>
-                            <p class="text-gray-600 text-sm mb-6">Large space designed for families seeking a familiar and cozy atmosphere.</p>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Family Suite</h3>
+                            <p class="text-slate-600 leading-relaxed">Large space designed for families seeking a familiar and cozy atmosphere.</p>
                         </div>
-                        <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20the%20Family%20Suite." target="_blank" class="block text-center bg-teal-600 text-white px-4 py-3 rounded-lg font-bold hover:bg-teal-700 transition">Book Room</a>
+                        <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20the%20Family%20Suite." target="_blank" 
+                           class="mt-6 block text-center bg-gradient-to-r from-orange-600 to-red-600 text-white px-4 py-3.5 rounded-xl font-semibold hover:shadow-lg hover:shadow-orange-500/30 transition-all duration-300">
+                           Book Room
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="watersports" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-teal-600 font-bold uppercase tracking-wider text-sm mb-2">Adventures Await</h2>
-            <h3 class="text-4xl font-bold text-gray-900 mb-4">Thrilling Water Sports</h3>
-            <p class="text-gray-500 max-w-2xl mx-auto">We arrange the best water sports and diving experiences through our trusted brother concerns in Malvan.</p>
+    <!-- Water Sports -->
+    <section id="watersports" class="py-28 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <span class="text-orange-600 font-semibold uppercase tracking-wider text-sm">Adventures Await</span>
+            <h3 class="text-5xl font-bold text-slate-900 mt-3">Thrilling Water Sports</h3>
+            <p class="text-slate-500 max-w-2xl mx-auto mt-5 text-lg">We arrange the best water sports and diving experiences through our trusted brother concerns in Malvan.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="relative rounded-2xl overflow-hidden group h-80 shadow-lg">
-                <img src="scuba.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Scuba Diving">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-5 text-white">
-                    <h4 class="text-xl font-bold">Scuba Diving</h4>
-                    <p class="text-sm opacity-90 mb-4">Explore underwater coral reefs</p>
-                    <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20Scuba%20Diving." target="_blank" class="block text-center bg-teal-500 hover:bg-teal-400 text-white px-4 py-2 rounded-full font-bold transition text-sm">Book Activity</a>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
+            <div class="relative rounded-3xl overflow-hidden group h-[28rem] shadow-xl card-lift">
+                <img src="scuba.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Scuba Diving">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/95 via-slate-900/40 to-transparent flex flex-col justify-end p-7 text-white">
+                    <h4 class="text-2xl font-bold">Scuba Diving</h4>
+                    <p class="text-sm text-slate-300 mt-2 mb-5">Explore underwater coral reefs</p>
+                    <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20Scuba%20Diving." target="_blank" 
+                       class="block text-center bg-white/20 hover:bg-white/30 border border-white/30 text-white px-4 py-2.5 rounded-full font-semibold transition backdrop-blur-sm text-sm">
+                       Book Activity
+                    </a>
                 </div>
             </div>
-            <div class="relative rounded-2xl overflow-hidden group h-80 shadow-lg">
-                <img src="parasailing.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Parasailing">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-5 text-white">
-                    <h4 class="text-xl font-bold">Parasailing</h4>
-                    <p class="text-sm opacity-90 mb-4">Fly high above the ocean</p>
-                    <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20Parasailing." target="_blank" class="block text-center bg-teal-500 hover:bg-teal-400 text-white px-4 py-2 rounded-full font-bold transition text-sm">Book Activity</a>
+            <div class="relative rounded-3xl overflow-hidden group h-[28rem] shadow-xl card-lift">
+                <img src="parasailing.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Parasailing">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/95 via-slate-900/40 to-transparent flex flex-col justify-end p-7 text-white">
+                    <h4 class="text-2xl font-bold">Parasailing</h4>
+                    <p class="text-sm text-slate-300 mt-2 mb-5">Fly high above the ocean</p>
+                    <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20Parasailing." target="_blank" 
+                       class="block text-center bg-white/20 hover:bg-white/30 border border-white/30 text-white px-4 py-2.5 rounded-full font-semibold transition backdrop-blur-sm text-sm">
+                       Book Activity
+                    </a>
                 </div>
             </div>
-            <div class="relative rounded-2xl overflow-hidden group h-80 shadow-lg">
-                <img src="bananaboat.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Banana Boat Ride">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-5 text-white">
-                    <h4 class="text-xl font-bold">Banana Boat</h4>
-                    <p class="text-sm opacity-90 mb-4">Fun ride for the whole family</p>
-                    <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20a%20Banana%20Boat%20Ride." target="_blank" class="block text-center bg-teal-500 hover:bg-teal-400 text-white px-4 py-2 rounded-full font-bold transition text-sm">Book Activity</a>
+            <div class="relative rounded-3xl overflow-hidden group h-[28rem] shadow-xl card-lift">
+                <img src="bananaboat.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Banana Boat Ride">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/95 via-slate-900/40 to-transparent flex flex-col justify-end p-7 text-white">
+                    <h4 class="text-2xl font-bold">Banana Boat</h4>
+                    <p class="text-sm text-slate-300 mt-2 mb-5">Fun ride for the whole family</p>
+                    <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20a%20Banana%20Boat%20Ride." target="_blank" 
+                       class="block text-center bg-white/20 hover:bg-white/30 border border-white/30 text-white px-4 py-2.5 rounded-full font-semibold transition backdrop-blur-sm text-sm">
+                       Book Activity
+                    </a>
                 </div>
             </div>
-            <div class="relative rounded-2xl overflow-hidden group h-80 shadow-lg">
-                <img src="boating.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Bumper Ride">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-5 text-white">
-                    <h4 class="text-xl font-bold">Bumper Ride</h4>
-                    <p class="text-sm opacity-90 mb-4">Thrilling bumps on the open sea</p>
-                    <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20a%20Bumper%20Ride." target="_blank" class="block text-center bg-teal-500 hover:bg-teal-400 text-white px-4 py-2 rounded-full font-bold transition text-sm">Book Activity</a>
+            <div class="relative rounded-3xl overflow-hidden group h-[28rem] shadow-xl card-lift">
+                <img src="boating.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Bumper Ride">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/95 via-slate-900/40 to-transparent flex flex-col justify-end p-7 text-white">
+                    <h4 class="text-2xl font-bold">Bumper Ride</h4>
+                    <p class="text-sm text-slate-300 mt-2 mb-5">Thrilling bumps on the open sea</p>
+                    <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20a%20Bumper%20Ride." target="_blank" 
+                       class="block text-center bg-white/20 hover:bg-white/30 border border-white/30 text-white px-4 py-2.5 rounded-full font-semibold transition backdrop-blur-sm text-sm">
+                       Book Activity
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="thingstodo" class="bg-slate-50 py-24 px-6 border-t border-gray-200">
+    <!-- Things to Do -->
+    <section id="thingstodo" class="bg-stone-50 py-28 px-6 border-t border-stone-200">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-teal-600 font-bold uppercase tracking-wider text-sm mb-2">Explore the Area</h2>
-                <h3 class="text-4xl font-bold text-gray-900 mb-4">Things to do in Tarkarli & Malvan</h3>
+            <div class="text-center mb-20">
+                <span class="text-orange-600 font-semibold uppercase tracking-wider text-sm">Explore the Area</span>
+                <h3 class="text-5xl font-bold text-slate-900 mt-3">Things to do in Tarkarli & Malvan</h3>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-                    <img src="fort.jpg" class="w-full h-56 object-cover" alt="Sindhudurg Fort">
-                    <div class="p-6 flex flex-col flex-grow justify-between">
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col card-lift">
+                    <div class="h-64 overflow-hidden">
+                        <img src="fort.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Sindhudurg Fort">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow justify-between">
                         <div>
-                            <h4 class="text-xl font-bold mb-2">Sindhudurg Fort</h4>
-                            <p class="text-gray-600 text-sm mb-6">Explore the majestic 17th-century sea fort built by Chhatrapati Shivaji Maharaj, resting proudly in the Arabian Sea.</p>
+                            <h4 class="text-2xl font-bold text-slate-900 mb-3">Sindhudurg Fort</h4>
+                            <p class="text-slate-600 leading-relaxed">Explore the majestic 17th-century sea fort built by Chhatrapati Shivaji Maharaj, resting proudly in the Arabian Sea.</p>
                         </div>
-                        <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20a%20trip%20to%20Sindhudurg%20Fort." target="_blank" class="block text-center bg-gray-800 text-white px-4 py-3 rounded-lg font-bold hover:bg-gray-900 transition">Book Trip</a>
+                        <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20a%20trip%20to%20Sindhudurg%20Fort." target="_blank" 
+                           class="mt-6 block text-center bg-slate-900 text-white px-4 py-3.5 rounded-xl font-semibold hover:bg-slate-800 transition">
+                           Book Trip
+                        </a>
                     </div>
                 </div>
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-                    <img src="dolphin-watching.jpg" class="w-full h-56 object-cover" alt="Dolphin Safari">
-                    <div class="p-6 flex flex-col flex-grow justify-between">
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col card-lift">
+                    <div class="h-64 overflow-hidden">
+                        <img src="dolphin-watching.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Dolphin Safari">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow justify-between">
                         <div>
-                            <h4 class="text-xl font-bold mb-2">Dolphin Safari</h4>
-                            <p class="text-gray-600 text-sm mb-6">Take a scenic boat ride in the early morning to witness playful dolphins in their natural habitat off the Malvan coast.</p>
+                            <h4 class="text-2xl font-bold text-slate-900 mb-3">Dolphin Safari</h4>
+                            <p class="text-slate-600 leading-relaxed">Take a scenic boat ride in the early morning to witness playful dolphins in their natural habitat off the Malvan coast.</p>
                         </div>
-                        <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20the%20Dolphin%20Safari%20Trip." target="_blank" class="block text-center bg-gray-800 text-white px-4 py-3 rounded-lg font-bold hover:bg-gray-900 transition">Book Trip</a>
+                        <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20the%20Dolphin%20Safari%20Trip." target="_blank" 
+                           class="mt-6 block text-center bg-slate-900 text-white px-4 py-3.5 rounded-xl font-semibold hover:bg-slate-800 transition">
+                           Book Trip
+                        </a>
                     </div>
                 </div>
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-                    <img src="mhatarichi_chul.jpg" class="w-full h-56 object-cover" alt="Mhatarichi Chul">
-                    <div class="p-6 flex flex-col flex-grow justify-between">
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col card-lift">
+                    <div class="h-64 overflow-hidden">
+                        <img src="mhatarichi_chul.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Mhatarichi Chul">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow justify-between">
                         <div>
-                            <h4 class="text-xl font-bold mb-2">Mhatarichi Chul</h4>
-                            <p class="text-gray-600 text-sm mb-6">Visit this beautiful local rocky beach and rock garden known for its unique natural formations and stunning sunset views.</p>
+                            <h4 class="text-2xl font-bold text-slate-900 mb-3">Mhatarichi Chul</h4>
+                            <p class="text-slate-600 leading-relaxed">Visit this beautiful local rocky beach and rock garden known for its unique natural formations and stunning sunset views.</p>
                         </div>
-                        <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20a%20trip%20to%20Mhatarichi%20Chul." target="_blank" class="block text-center bg-gray-800 text-white px-4 py-3 rounded-lg font-bold hover:bg-gray-900 transition">Book Trip</a>
+                        <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20a%20trip%20to%20Mhatarichi%20Chul." target="_blank" 
+                           class="mt-6 block text-center bg-slate-900 text-white px-4 py-3.5 rounded-xl font-semibold hover:bg-slate-800 transition">
+                           Book Trip
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <div class="text-center mt-12">
-                <a href="https://www.tripadvisor.in/Attractions-g1227937-Activities-Malvan_Sindhudurg_District_Maharashtra.html" target="_blank" class="inline-flex items-center gap-2 bg-white border border-teal-600 text-teal-700 px-8 py-3 rounded-full font-bold hover:bg-teal-50 transition shadow-md">
-                    See More Attractions on TripAdvisor ↗
+            <div class="text-center mt-16">
+                <a href="https://www.tripadvisor.in/Attractions-g1227937-Activities-Malvan_Sindhudurg_District_Maharashtra.html" target="_blank" 
+                   class="inline-flex items-center gap-3 bg-white border-2 border-orange-200 text-orange-700 px-8 py-3.5 rounded-full font-semibold hover:border-orange-400 hover:bg-orange-50 transition shadow-md">
+                    See More Attractions on TripAdvisor
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                 </a>
             </div>
         </div>
     </section>
 
-    <section class="py-24 px-6 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-4 text-gray-900">What Our Guests Say</h2>
-            <p class="text-center text-gray-500 mb-16">Real experiences from our wonderful visitors.</p>
+    <!-- Testimonials -->
+    <section class="py-28 px-6 bg-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-orange-50 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-red-50 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2"></div>
+        
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-20">
+                <span class="text-orange-600 font-semibold uppercase tracking-wider text-sm">Testimonials</span>
+                <h2 class="text-5xl font-bold text-slate-900 mt-3">What Our Guests Say</h2>
+                <p class="text-slate-500 mt-4 text-lg">Real experiences from our wonderful visitors.</p>
+            </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div class="bg-stone-50 p-8 rounded-3xl border border-stone-100 flex flex-col justify-between hover:shadow-xl transition duration-300">
                     <div>
-                        <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
-                        <p class="text-gray-600 italic mb-6">"Fully happy with Samadhaan Beach resort with mind blowing sea view from room itself and satisfactory service. Must visit this place for memorable trip..! 😇👍🏼"</p>
+                        <div class="flex gap-1 text-yellow-400 text-lg mb-5">★★★★★</div>
+                        <p class="text-slate-600 italic leading-relaxed">"Fully happy with Samadhaan Beach resort with mind blowing sea view from room itself and satisfactory service. Must visit this place for memorable trip..! 😇👍🏼"</p>
                     </div>
-                    <h5 class="font-bold text-sm uppercase text-teal-800">Tejas Shirsat</h5>
+                    <div class="mt-8 pt-6 border-t border-stone-200">
+                        <h5 class="font-bold text-sm uppercase text-slate-900">Tejas Shirsat</h5>
+                    </div>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div class="bg-stone-50 p-8 rounded-3xl border border-stone-100 flex flex-col justify-between hover:shadow-xl transition duration-300">
                     <div>
-                        <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
-                        <p class="text-gray-600 italic mb-6">"Awesome experience,,,,, just feel like heaven... Good food , good hospitality..."</p>
+                        <div class="flex gap-1 text-yellow-400 text-lg mb-5">★★★★★</div>
+                        <p class="text-slate-600 italic leading-relaxed">"Awesome experience,,,,, just feel like heaven... Good food , good hospitality..."</p>
                     </div>
-                    <h5 class="font-bold text-sm uppercase text-teal-800">Dr Sagar Mokashi</h5>
+                    <div class="mt-8 pt-6 border-t border-stone-200">
+                        <h5 class="font-bold text-sm uppercase text-slate-900">Dr Sagar Mokashi</h5>
+                    </div>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div class="bg-stone-50 p-8 rounded-3xl border border-stone-100 flex flex-col justify-between hover:shadow-xl transition duration-300">
                     <div>
-                        <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
-                        <p class="text-gray-600 italic mb-6">"एकदम मस्त आणि निवांत ठिकाण आहे. अगदी रूम मधून समुद्र दिसतो. रिसॉर्ट च परिसर एकदम शांत आणि स्वच्छ सुरक्षित आहे. रूम्स पण एकदम टकाटक. रेट पण खूपच परवडणारे आहेत."</p>
+                        <div class="flex gap-1 text-yellow-400 text-lg mb-5">★★★★★</div>
+                        <p class="text-slate-600 italic leading-relaxed">"एकदम मस्त आणि निवांत ठिकाण आहे. अगदी रूम मधून समुद्र दिसतो. रिसॉर्ट च परिसर एकदम शांत आणि स्वच्छ सुरक्षित आहे. रूम्स पण एकदम टकाटक. रेट पण खूपच परवडणारे आहेत."</p>
                     </div>
-                    <h5 class="font-bold text-sm uppercase text-teal-800">Vishal Kavathekar</h5>
+                    <div class="mt-8 pt-6 border-t border-stone-200">
+                        <h5 class="font-bold text-sm uppercase text-slate-900">Vishal Kavathekar</h5>
+                    </div>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div class="bg-stone-50 p-8 rounded-3xl border border-stone-100 flex flex-col justify-between hover:shadow-xl transition duration-300">
                     <div>
-                        <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
-                        <p class="text-gray-600 italic mb-6">"Very nice place to visit with family. Neat & Clean room good service. Near to sea were you feel the peace food was incredible really helpful people around."</p>
+                        <div class="flex gap-1 text-yellow-400 text-lg mb-5">★★★★★</div>
+                        <p class="text-slate-600 italic leading-relaxed">"Very nice place to visit with family. Neat & Clean room good service. Near to sea were you feel the peace food was incredible really helpful people around."</p>
                     </div>
-                    <h5 class="font-bold text-sm uppercase text-teal-800">Rajiv Bhosle</h5>
+                    <div class="mt-8 pt-6 border-t border-stone-200">
+                        <h5 class="font-bold text-sm uppercase text-slate-900">Rajiv Bhosle</h5>
+                    </div>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div class="bg-stone-50 p-8 rounded-3xl border border-stone-100 flex flex-col justify-between hover:shadow-xl transition duration-300">
                     <div>
-                        <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
-                        <p class="text-gray-600 italic mb-6">"Best stay for family. Affordable and sea view also."</p>
+                        <div class="flex gap-1 text-yellow-400 text-lg mb-5">★★★★★</div>
+                        <p class="text-slate-600 italic leading-relaxed">"Best stay for family. Affordable and sea view also."</p>
                     </div>
-                    <h5 class="font-bold text-sm uppercase text-teal-800">Aniket Rahatal</h5>
+                    <div class="mt-8 pt-6 border-t border-stone-200">
+                        <h5 class="font-bold text-sm uppercase text-slate-900">Aniket Rahatal</h5>
+                    </div>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div class="bg-stone-50 p-8 rounded-3xl border border-stone-100 flex flex-col justify-between hover:shadow-xl transition duration-300">
                     <div>
-                        <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
-                        <p class="text-gray-600 italic mb-6">"अप्रतिम रिसोर्ट चांगल्या सुविधा आहेत ओनर अतिशय चांगले आहेत आणि समुद्रकिनाऱ्या शेजारी ❤️❤️"</p>
+                        <div class="flex gap-1 text-yellow-400 text-lg mb-5">★★★★★</div>
+                        <p class="text-slate-600 italic leading-relaxed">"अप्रतिम रिसोर्ट चांगल्या सुविधा आहेत ओनर अतिशय चांगले आहेत आणि समुद्रकिनाऱ्या शेजारी ❤️❤️"</p>
                     </div>
-                    <h5 class="font-bold text-sm uppercase text-teal-800">Swapnil Gaikwad</h5>
+                    <div class="mt-8 pt-6 border-t border-stone-200">
+                        <h5 class="font-bold text-sm uppercase text-slate-900">Swapnil Gaikwad</h5>
+                    </div>
                 </div>
             </div>
 
-            <div class="text-center mt-12">
-                <a href="https://g.page/r/CRcsdwhtdGvPEAI/review" target="_blank" class="inline-block bg-teal-600 text-white px-8 py-4 rounded-full font-bold hover:bg-teal-700 transition shadow-lg hover:-translate-y-1">
+            <div class="text-center mt-16">
+                <a href="https://g.page/r/CRcsdwhtdGvPEAI/review" target="_blank" 
+                   class="inline-flex items-center gap-2 bg-gradient-to-r from-orange-600 to-red-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl hover:shadow-orange-500/30 transition-all duration-300 hover:-translate-y-1">
                     Read More 5-Star Reviews on Google
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                 </a>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="bg-gray-900 text-gray-300 py-16 px-6">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-950 text-slate-400 py-20 px-6 relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-px bg-gradient-to-r from-transparent via-orange-500/50 to-transparent"></div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-16 relative z-10">
             <div>
-                <img src="samadhan_logo.png" alt="Footer Logo" class="h-16 mb-6 brightness-0 invert">
-                <p class="text-sm leading-relaxed">Nestled in Wairy, Malvan, we offer the best Konkani hospitality with a sea-touch experience. Perfect for families and couples looking for a peaceful getaway.</p>
+                <img src="samadhan_logo.png" alt="Footer Logo" class="h-16 mb-6 brightness-0 invert opacity-90">
+                <p class="text-sm leading-relaxed text-slate-400">Nestled in Wairy, Malvan, we offer the best Konkani hospitality with a sea-touch experience. Perfect for families and couples looking for a peaceful getaway.</p>
             </div>
             <div>
-                <h4 class="text-white font-bold text-xl mb-6 underline decoration-teal-500 underline-offset-8">Visit Us</h4>
-                <p class="text-sm mb-2">📍 Wairy-Tarkarli Road, Malvan, Maharashtra</p>
-                <p class="text-sm mb-2">🚂 Nearest Station: Kudal (30 km)</p>
-                <p class="text-sm">✈️ Nearest Airport: Chipi</p>
+                <h4 class="text-white font-bold text-xl mb-6">Visit Us</h4>
+                <div class="space-y-3 text-sm">
+                    <p class="flex items-start gap-3">
+                        <span class="text-orange-500 mt-0.5">📍</span>
+                        <span>Wairy-Tarkarli Road, Malvan, Maharashtra</span>
+                    </p>
+                    <p class="flex items-start gap-3">
+                        <span class="text-orange-500 mt-0.5">🚂</span>
+                        <span>Nearest Station: Kudal (30 km)</span>
+                    </p>
+                    <p class="flex items-start gap-3">
+                        <span class="text-orange-500 mt-0.5">✈️</span>
+                        <span>Nearest Airport: Chipi</span>
+                    </p>
+                </div>
             </div>
             <div>
-                <h4 class="text-white font-bold text-xl mb-6 underline decoration-teal-500 underline-offset-8">Contact For Booking</h4>
-                <p class="text-sm mb-2">📞 <a href="tel:+919137234477" class="hover:text-teal-400 transition">+91 91372 34477</a></p>
-                <p class="text-sm mb-6">💬 <a href="https://wa.me/919137234477?text=Hi,%20I%20have%20an%20inquiry%20about%20Samadhan%20Resort." class="hover:text-green-400 transition" target="_blank">WhatsApp: +91 91372 34477</a></p>
+                <h4 class="text-white font-bold text-xl mb-6">Contact For Booking</h4>
+                <div class="space-y-3 text-sm mb-8">
+                    <p class="flex items-center gap-3">
+                        <span class="text-orange-500">📞</span>
+                        <a href="tel:+919137234477" class="hover:text-orange-400 transition text-slate-300">+91 91372 34477</a>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="text-orange-500">💬</span>
+                        <a href="https://wa.me/919137234477?text=Hi,%20I%20have%20an%20inquiry%20about%20Samadhan%20Resort." class="hover:text-green-400 transition text-slate-300" target="_blank">WhatsApp: +91 91372 34477</a>
+                    </p>
+                </div>
                 
-                <h5 class="text-white font-bold mb-2">Policies</h5>
+                <h5 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Policies</h5>
                 <div class="flex flex-wrap gap-2">
-                    <span class="bg-white/10 px-3 py-1 rounded-full text-xs">9:30 AM Checkout</span>
-                    <span class="bg-white/10 px-3 py-1 rounded-full text-xs">11:00 AM Check-in</span>
-                    <span class="bg-white/10 px-3 py-1 rounded-full text-xs">50% Advance Required</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs">9:30 AM Checkout</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs">11:00 AM Check-in</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs">50% Advance Required</span>
                 </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 text-center text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto mt-16 pt-8 text-center text-xs text-slate-600 border-t border-white/5">
             &copy; 2026 Samadhan Beach Resort. All rights reserved.
         </div>
     </footer>
