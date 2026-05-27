@@ -1,1 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Samadhan Beach Resort Malvan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(15,23,42,0.4) 0%, rgba(15,23,42,0.8) 100%);
+        }
+        .section-pattern {
+            background-image: radial-gradient(circle at 1px 1px, rgba(234,88,12,0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-slate-800">
 
+    <!-- Navigation -->
+    <nav class="glass fixed w-full z-50 top-0 border-b border-stone-200/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center py-2">
+                <div class="flex items-center gap-3">
+                    <img src="samadhan_logo.png" alt="Samadhan Logo" class="h-16 md:h-20 rounded-md object-contain">
+                    <span class="text-2xl font-bold text-slate-900 hidden sm:block tracking-tight">Samadhan Resort</span>
+                </div>
+                <div class="hidden lg:flex space-x-8 text-sm items-center font-medium text-slate-600">
+                    <a href="index.html" class="hover:text-orange-600 transition">Home</a>
+                    <a href="about.html" class="text-orange-600 font-semibold transition">About Us</a>
+                    <a href="water-sports.html" class="hover:text-orange-600 transition">Water Sports</a>
+                    <a href="things-to-do.html" class="hover:text-orange-600 transition">Things to do</a>
+                    <a href="gallery.html" class="hover:text-orange-600 transition">Gallery</a>
+                    <a href="#contact" class="hover:text-orange-600 transition">Contact Us</a>
+                </div>
+                <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20make%20a%20general%20booking%20inquiry." target="_blank" 
+                   class="bg-gradient-to-r from-orange-600 to-red-600 text-white px-7 py-2.5 rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                   Book Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Inner Page Hero Section -->
+    <section class="relative h-[60vh] flex items-center justify-center text-center overflow-hidden mt-16">
+        <img src="malvan_beach1.jpeg" class="absolute top-0 left-0 w-full h-full object-cover z-0" alt="About Us Background">
+        <div class="absolute top-0 left-0 w-full h-full hero-overlay z-10"></div>
+        
+        <div class="relative z-20 text-white px-4 max-w-4xl mt-10">
+            <p class="text-sm md:text-base uppercase tracking-[0.3em] font-medium text-orange-200 mb-4">Our Story</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 drop-shadow-2xl leading-tight">The Heart of Konkan</h1>
+            <p class="text-lg md:text-xl font-light text-stone-200 max-w-2xl mx-auto leading-relaxed">Experience unmatched hospitality, mouth-watering cuisine, and the warmth of the Patkar family right on the shores of Malvan.</p>
+        </div>
+    </section>
+
+    <!-- The Patkar Family Story -->
+    <section class="py-24 px-6 max-w-7xl mx-auto section-pattern">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <div class="relative group">
+                <div class="absolute -inset-4 bg-gradient-to-r from-orange-100 to-red-100 rounded-[2rem] rotate-2 group-hover:rotate-1 transition duration-500"></div>
+                <img src="malvan_beach.jpeg" alt="Samadhan Resort Location" class="relative rounded-2xl shadow-2xl w-full object-cover h-[550px]">
+                <div class="absolute -bottom-8 -right-8 bg-slate-900 text-white p-8 rounded-3xl shadow-2xl max-w-xs border border-slate-700">
+                    <p class="text-3xl font-bold text-orange-400 mb-2">Service First</p>
+                    <p class="text-slate-300 text-sm leading-relaxed">We treat our guests not just as customers, but as extended members of our own family.</p>
+                </div>
+            </div>
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="h-px w-12 bg-orange-500"></div>
+                    <span class="text-orange-600 font-semibold uppercase tracking-wider text-sm">Founded by Mr. Ravindra Patkar</span>
+                </div>
+                <h2 class="text-5xl font-bold text-slate-900 mb-8 leading-tight">A Legacy of Warmth & Hospitality</h2>
+                <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                    Under the visionary leadership of our owner, <strong>Mr. Ravindra Patkar</strong>, Samadhan Beach Resort has grown into one of Malvan's most beloved sea-touch destinations. What started as a dream to share the untouched beauty of Wairy Beach has blossomed into a resort famous across the region for its unparalleled service.
+                </p>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    The entire Patkar family is deeply rooted in the daily operations of the resort. When you stay with us, you are experiencing authentic Konkani culture. From ensuring your room is immaculate to guiding you toward the best local adventures, our family is dedicated to making your stay perfect.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-8 mt-12 border-t border-stone-200 pt-8">
+                    <div>
+                        <div class="text-orange-600 text-3xl mb-3">🤝</div>
+                        <h4 class="font-bold text-slate-900 text-xl mb-2">Renowned Service</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed">Our staff goes above and beyond, making us the top-rated choice for hospitality in Malvan.</p>
+                    </div>
+                    <div>
+                        <div class="text-orange-600 text-3xl mb-3">🌊</div>
+                        <h4 class="font-bold text-slate-900 text-xl mb-2">Zero Distance</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed">Wake up, open your door, and step directly onto the pristine sands of Wairy Beach.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food & Culinary Section -->
+    <section class="py-24 px-6 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-orange-500 rounded-full blur-[150px] opacity-20 -translate-y-1/2 translate-x-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-red-500 rounded-full blur-[150px] opacity-20 translate-y-1/2 -translate-x-1/2"></div>
+        
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-orange-400 font-medium uppercase tracking-wider text-sm">A Taste of Malvan</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-3">Famous For Our Food</h2>
+                <p class="text-slate-400 mt-4 max-w-2xl mx-auto text-lg">The Patkar family is renowned for preparing delicious, mouth-watering meals that capture the true essence of coastal India.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-stretch">
+                <!-- Seafood Focus -->
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm hover:bg-white/10 transition duration-300">
+                    <div class="text-5xl mb-6">🦀</div>
+                    <h3 class="text-3xl font-bold mb-4 text-orange-300">Authentic Seafood</h3>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        Malvan is synonymous with spectacular seafood, and our kitchen is at the heart of it. We source the freshest daily catch directly from local fishermen. Prepared using our secret family recipes and traditional Malvani spices, our Fish Thali, Prawns Fry, and Crab Masala are legendary among our guests.
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-400">
+                        <li class="flex items-center gap-2"><span class="text-orange-500">✓</span> Fresh daily ocean catch</li>
+                        <li class="flex items-center gap-2"><span class="text-orange-500">✓</span> Traditional Patkar family recipes</li>
+                        <li class="flex items-center gap-2"><span class="text-orange-500">✓</span> Authentic Konkani spices</li>
+                    </ul>
+                </div>
+
+                <!-- Pure Veg Focus -->
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm hover:bg-white/10 transition duration-300">
+                    <div class="text-5xl mb-6">🥗</div>
+                    <h3 class="text-3xl font-bold mb-4 text-green-400">Pure Vegetarian Options</h3>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        We understand and respect the diverse dietary needs of all our guests. Samadhan Resort offers a dedicated, strictly Pure Vegetarian menu. From delicious Veg Thalis and Modak to custom Jain food preparations, we ensure the highest standards of purity and taste without compromise.
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-400">
+                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Separate Pure Veg preparations</li>
+                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Jain food available on request</li>
+                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Healthy, homely, and delicious</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-950 text-slate-400 py-20 px-6 relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-px bg-gradient-to-r from-transparent via-orange-500/50 to-transparent"></div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-16 relative z-10">
+            <div>
+                <img src="samadhan_logo.png" alt="Footer Logo" class="h-20 mb-6 rounded-md object-contain">
+                <p class="text-sm leading-relaxed text-slate-400">Nestled in Wairy, Malvan, we offer the best Konkani hospitality with a sea-touch experience. Perfect for families and couples looking for a peaceful getaway.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-xl mb-6">Visit Us</h4>
+                <div class="space-y-4 text-sm">
+                    <div class="flex items-start gap-3">
+                        <span class="text-orange-500 mt-0.5">📍</span>
+                        <div class="flex flex-col">
+                            <span>Wairy-Tarkarli Road, Malvan, Maharashtra</span>
+                            <a href="https://www.google.com/maps?hl=en-GB&mat=CVMrlhQUKs1LElcBTVDHnvMVyMJ5Y5zA2FI7AC1-ZVOFR__IisJlEAxhOQX7nY61M885HIr2EyxChqRk01IEYC-sadP7eLa1C6SmNyRgNn6L3Uwn6i4ELJupcCGBHtsqDbc&authuser=0&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=Ke_KpAQgA8A7MRcsdwhtdGvP&daddr=Shivaji+Chowk,+Tarkarli+Road,+Teli+Panand,+Malvan,+Maharashtra+416606" target="_blank" class="text-orange-500 hover:text-orange-400 mt-1 font-semibold text-xs">View on Google Maps ↗</a>
+                        </div>
+                    </div>
+                    <p class="flex items-start gap-3">
+                        <span class="text-orange-500 mt-0.5">🚂</span>
+                        <span>Nearest Station: Kudal (30 km)</span>
+                    </p>
+                    <p class="flex items-start gap-3">
+                        <span class="text-orange-500 mt-0.5">✈️</span>
+                        <span>Nearest Airport: Chipi</span>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-xl mb-6">Contact For Booking</h4>
+                <div class="space-y-3 text-sm mb-8">
+                    <p class="flex items-center gap-3">
+                        <span class="text-orange-500">📞</span>
+                        <a href="tel:+919137234477" class="hover:text-orange-400 transition text-slate-300">+91 91372 34477</a>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="text-orange-500">💬</span>
+                        <a href="https://wa.me/919137234477?text=Hi,%20I%20have%20an%20inquiry%20about%20Samadhan%20Resort." class="hover:text-green-400 transition text-slate-300" target="_blank">WhatsApp: +91 91372 34477</a>
+                    </p>
+                </div>
+                
+                <h5 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Policies</h5>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs">9:30 AM Checkout</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs">11:00 AM Check-in</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs">50% Advance Required</span>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 pt-8 text-center text-xs text-slate-600 border-t border-white/5">
+            &copy; 2026 Samadhan Beach Resort. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
