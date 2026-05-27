@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Sports | Samadhan Beach Resort Malvan</title>
+    <title>Samadhan Beach Resort | Sea-Touch Stay in Malvan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
@@ -12,6 +12,11 @@
         h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
         .glass {
             background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .glass-dark {
+            background: rgba(15, 23, 42, 0.6);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
         }
@@ -27,8 +32,10 @@
             transform: translateY(-8px);
             box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
         }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         .hero-overlay {
-            background: linear-gradient(to bottom, rgba(15,23,42,0.4) 0%, rgba(15,23,42,0.7) 100%);
+            background: linear-gradient(to bottom, rgba(15,23,42,0.3) 0%, rgba(15,23,42,0.6) 100%);
         }
         .section-pattern {
             background-image: radial-gradient(circle at 1px 1px, rgba(234,88,12,0.05) 1px, transparent 0);
