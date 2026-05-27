@@ -1,1 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things To Do in Malvan | Samadhan Beach Resort</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(15,23,42,0.4) 0%, rgba(15,23,42,0.8) 100%);
+        }
+        .section-pattern {
+            background-image: radial-gradient(circle at 1px 1px, rgba(234,88,12,0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-slate-800">
 
+    <!-- Navigation -->
+    <nav class="glass fixed w-full z-50 top-0 border-b border-stone-200/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center gap-3">
+                    <img src="samadhan_logo.png" alt="Samadhan Logo" class="h-12">
+                    <span class="text-xl font-bold text-slate-900 hidden sm:block tracking-tight">Samadhan Resort</span>
+                </div>
+                <div class="hidden lg:flex space-x-8 text-sm items-center font-medium text-slate-600">
+                    <a href="index.html" class="hover:text-orange-600 transition">Home</a>
+                    <a href="about.html" class="hover:text-orange-600 transition">About Us</a>
+                    <a href="water-sports.html" class="hover:text-orange-600 transition">Water Sports</a>
+                    <a href="things-to-do.html" class="text-orange-600 font-semibold transition">Things to do</a>
+                    <a href="gallery.html" class="hover:text-orange-600 transition">Gallery</a>
+                    <a href="#contact" class="hover:text-orange-600 transition">Contact Us</a>
+                </div>
+                <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20make%20a%20general%20booking%20inquiry." target="_blank" 
+                   class="bg-gradient-to-r from-orange-600 to-red-600 text-white px-7 py-2.5 rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                   Book Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Inner Page Hero Section -->
+    <section class="relative h-[60vh] flex items-center justify-center text-center overflow-hidden mt-16">
+        <img src="fort.jpg" class="absolute top-0 left-0 w-full h-full object-cover z-0" alt="Things to do Background">
+        <div class="absolute top-0 left-0 w-full h-full hero-overlay z-10"></div>
+        
+        <div class="relative z-20 text-white px-4 max-w-4xl mt-10">
+            <p class="text-sm md:text-base uppercase tracking-[0.3em] font-medium text-orange-200 mb-4">Explore Malvan</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 drop-shadow-2xl leading-tight">Top Attractions</h1>
+            <p class="text-lg md:text-xl font-light text-stone-200 max-w-2xl mx-auto leading-relaxed">Discover the best beaches, historic forts, and sacred temples around Samadhan Resort based on real traveler reviews.</p>
+        </div>
+    </section>
+
+    <!-- Main Attractions Grid -->
+    <section class="py-24 px-6 max-w-7xl mx-auto section-pattern">
+        <div class="text-center mb-16">
+            <span class="text-orange-600 font-semibold uppercase tracking-wider text-sm">TripAdvisor Ranked</span>
+            <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mt-3">Must-Visit Places in Malvan</h2>
+            <div class="h-1 w-24 bg-gradient-to-r from-orange-500 to-red-500 mx-auto mt-6 rounded-full mb-4"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <!-- 1. Tarkarli Beach -->
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col card-lift">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="malvan_beach.jpeg" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Tarkarli Beach">
+                    <div class="absolute top-4 left-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-full text-xs font-bold text-slate-800 shadow-sm">Beaches</div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-1">
+                        <h4 class="text-2xl font-bold text-slate-900">1. Tarkarli Beach</h4>
+                        <div class="flex items-center gap-1 bg-orange-50 text-orange-700 px-2 py-1 rounded-lg text-sm font-bold">
+                            <span>★</span> 4.3
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 mb-6 font-medium">(471 reviews)</p>
+                    <div class="bg-stone-50 p-5 rounded-2xl border border-stone-100 flex-grow relative">
+                        <span class="absolute -top-3 left-4 text-4xl text-orange-300 font-serif">"</span>
+                        <p class="text-slate-600 text-sm italic mb-3 relative z-10 leading-relaxed">It felt very calming. The water was clean too. One can see the Sindhudurg fort from the beach.</p>
+                        <p class="text-xs font-semibold text-slate-400 text-right">- By Savvytraveler026</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Sindhudurg Fort -->
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col card-lift">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="fort.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Sindhudurg Fort">
+                    <div class="absolute top-4 left-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-full text-xs font-bold text-slate-800 shadow-sm">Historic Sites</div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-1">
+                        <h4 class="text-2xl font-bold text-slate-900">2. Sindhudurg Fort</h4>
+                        <div class="flex items-center gap-1 bg-orange-50 text-orange-700 px-2 py-1 rounded-lg text-sm font-bold">
+                            <span>★</span> 4.0
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 mb-6 font-medium">(332 reviews)</p>
+                    <div class="bg-stone-50 p-5 rounded-2xl border border-stone-100 flex-grow relative">
+                        <span class="absolute -top-3 left-4 text-4xl text-orange-300 font-serif">"</span>
+                        <p class="text-slate-600 text-sm italic mb-3 relative z-10 leading-relaxed">One has to take ferry to reach the spot.</p>
+                        <p class="text-xs font-semibold text-slate-400 text-right">- By Climber03678399916</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Talashil Tondavali Beach -->
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col card-lift">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1596815064285-45ed8a9c0463?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Talashil Tondavali Beach">
+                    <div class="absolute top-4 left-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-full text-xs font-bold text-slate-800 shadow-sm">Beaches</div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-1">
+                        <h4 class="text-2xl font-bold text-slate-900 leading-tight">3. Talashil Tondavali</h4>
+                        <div class="flex items-center gap-1 bg-orange-50 text-orange-700 px-2 py-1 rounded-lg text-sm font-bold ml-2">
+                            <span>★</span> 4.6
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 mb-6 font-medium">(40 reviews)</p>
+                    <div class="bg-stone-50 p-5 rounded-2xl border border-stone-100 flex-grow relative">
+                        <span class="absolute -top-3 left-4 text-4xl text-orange-300 font-serif">"</span>
+                        <p class="text-slate-600 text-sm italic mb-3 relative z-10 leading-relaxed">visited Island village. serene place to visit food and stay was good. People are simple and caring.</p>
+                        <p class="text-xs font-semibold text-slate-400 text-right">- By 673chitrak</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Rameshwar Temple -->
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col card-lift">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Rameshwar Temple">
+                    <div class="absolute top-4 left-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-full text-xs font-bold text-slate-800 shadow-sm">Religious Sites</div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-1">
+                        <h4 class="text-2xl font-bold text-slate-900 leading-tight">4. Rameshwar Temple</h4>
+                        <div class="flex items-center gap-1 bg-orange-50 text-orange-700 px-2 py-1 rounded-lg text-sm font-bold ml-2">
+                            <span>★</span> 4.5
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 mb-6 font-medium">(30 reviews)</p>
+                    <div class="bg-stone-50 p-5 rounded-2xl border border-stone-100 flex-grow relative">
+                        <span class="absolute -top-3 left-4 text-4xl text-orange-300 font-serif">"</span>
+                        <p class="text-slate-600 text-sm italic mb-3 relative z-10 leading-relaxed line-clamp-3">Situated in Achara village a small road from Achara Titha connects to this very old temple of Shiva. Very...</p>
+                        <p class="text-xs font-semibold text-slate-400 text-right">- By amitpednekar</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Vengurla Malvan Beach -->
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col card-lift">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Vengurla Malvan Beach">
+                    <div class="absolute top-4 left-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-full text-xs font-bold text-slate-800 shadow-sm">Beaches</div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-1">
+                        <h4 class="text-2xl font-bold text-slate-900 leading-tight">5. Vengurla Malvan</h4>
+                        <div class="flex items-center gap-1 bg-orange-50 text-orange-700 px-2 py-1 rounded-lg text-sm font-bold ml-2">
+                            <span>★</span> 4.2
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 mb-6 font-medium">(36 reviews)</p>
+                    <div class="bg-stone-50 p-5 rounded-2xl border border-stone-100 flex-grow relative">
+                        <span class="absolute -top-3 left-4 text-4xl text-orange-300 font-serif">"</span>
+                        <p class="text-slate-600 text-sm italic mb-3 relative z-10 leading-relaxed line-clamp-3">It was great experience at vengurla beach with Gomantak Scuba. Next I will try PADI Advance open water course...</p>
+                        <p class="text-xs font-semibold text-slate-400 text-right">- By Neilscubalover</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Rock Garden -->
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col card-lift">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="mhatarichi_chul.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Rock Garden">
+                    <div class="absolute top-4 left-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-full text-xs font-bold text-slate-800 shadow-sm">Landmarks</div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-1">
+                        <h4 class="text-2xl font-bold text-slate-900">6. Rock Garden</h4>
+                        <div class="flex items-center gap-1 bg-orange-50 text-orange-700 px-2 py-1 rounded-lg text-sm font-bold">
+                            <span>★</span> 4.1
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 mb-6 font-medium">(163 reviews)</p>
+                    <div class="bg-stone-50 p-5 rounded-2xl border border-stone-100 flex-grow relative">
+                        <span class="absolute -top-3 left-4 text-4xl text-orange-300 font-serif">"</span>
+                        <p class="text-slate-600 text-sm italic mb-3 relative z-10 leading-relaxed line-clamp-3">Only name is Rock garden. Nothing too special in this garden. Just situated on beach. This is only playing garden for...</p>
+                        <p class="text-xs font-semibold text-slate-400 text-right">- By Nishas957</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Malvan Marine Sanctuary -->
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col card-lift">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="scuba.png" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Malvan Marine Sanctuary">
+                    <div class="absolute top-4 left-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-full text-xs font-bold text-slate-800 shadow-sm">Wildlife Areas</div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-1">
+                        <h4 class="text-2xl font-bold text-slate-900 leading-tight">7. Marine Sanctuary</h4>
+                        <div class="flex items-center gap-1 bg-orange-50 text-orange-700 px-2 py-1 rounded-lg text-sm font-bold ml-2">
+                            <span>★</span> 4.3
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 mb-6 font-medium">(69 reviews)</p>
+                    <div class="bg-stone-50 p-5 rounded-2xl border border-stone-100 flex-grow relative">
+                        <span class="absolute -top-3 left-4 text-4xl text-orange-300 font-serif">"</span>
+                        <p class="text-slate-600 text-sm italic mb-3 relative z-10 leading-relaxed line-clamp-3">Scuba diving was good but the wait time is really long. Jet ski guys drive very roughly, I got hurt a bit. Watersports...</p>
+                        <p class="text-xs font-semibold text-slate-400 text-right">- By Travelallthetim</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. Jay Ganesh Mandir -->
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col card-lift">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1604580864964-0462f5d5b1a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Jay Ganesh Mandir">
+                    <div class="absolute top-4 left-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-full text-xs font-bold text-slate-800 shadow-sm">Religious Sites</div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-1">
+                        <h4 class="text-2xl font-bold text-slate-900 leading-tight">8. Jay Ganesh Mandir</h4>
+                        <div class="flex items-center gap-1 bg-orange-50 text-orange-700 px-2 py-1 rounded-lg text-sm font-bold ml-2">
+                            <span>★</span> 4.3
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 mb-6 font-medium">(60 reviews)</p>
+                    <div class="bg-stone-50 p-5 rounded-2xl border border-stone-100 flex-grow relative">
+                        <span class="absolute -top-3 left-4 text-4xl text-orange-300 font-serif">"</span>
+                        <p class="text-slate-600 text-sm italic mb-3 relative z-10 leading-relaxed line-clamp-3">The temple is in the shade of a big tree(Peepal Probably), has a small well, and a beautiful Lord Ganesha idol. The...</p>
+                        <p class="text-xs font-semibold text-slate-400 text-right">- By GautamBhende</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Sateri Devi Jal Mandir -->
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col card-lift">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Sateri Devi Jal Mandir">
+                    <div class="absolute top-4 left-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-full text-xs font-bold text-slate-800 shadow-sm">Landmarks</div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-1">
+                        <h4 class="text-2xl font-bold text-slate-900 leading-tight">9. Sateri Devi Mandir</h4>
+                        <div class="flex items-center gap-1 bg-orange-50 text-orange-700 px-2 py-1 rounded-lg text-sm font-bold ml-2">
+                            <span>★</span> 4.5
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 mb-6 font-medium">(11 reviews)</p>
+                    <div class="bg-stone-50 p-5 rounded-2xl border border-stone-100 flex-grow relative">
+                        <span class="absolute -top-3 left-4 text-4xl text-orange-300 font-serif">"</span>
+                        <p class="text-slate-600 text-sm italic mb-3 relative z-10 leading-relaxed line-clamp-3">I have visited this temple 'n' no of times. However, every time I see, there is an improvement to maintain the area...</p>
+                        <p class="text-xs font-semibold text-slate-400 text-right">- By Vishal3110</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. Achara Beach -->
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col card-lift">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1520116468816-95b69f847357?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Achara Beach">
+                    <div class="absolute top-4 left-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-full text-xs font-bold text-slate-800 shadow-sm">Beaches</div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-1">
+                        <h4 class="text-2xl font-bold text-slate-900">10. Achara Beach</h4>
+                        <div class="flex items-center gap-1 bg-orange-50 text-orange-700 px-2 py-1 rounded-lg text-sm font-bold">
+                            <span>★</span> 4.0
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 mb-6 font-medium">(18 reviews)</p>
+                    <div class="bg-stone-50 p-5 rounded-2xl border border-stone-100 flex-grow relative">
+                        <span class="absolute -top-3 left-4 text-4xl text-orange-300 font-serif">"</span>
+                        <p class="text-slate-600 text-sm italic mb-3 relative z-10 leading-relaxed line-clamp-3">Beach is not much crowded and Water is clean with White Sand on shore. Nearby there is Light house however it is...</p>
+                        <p class="text-xs font-semibold text-slate-400 text-right">- By Swamesh416</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. Bhagwati Temple -->
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col card-lift">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Bhagwati Temple">
+                    <div class="absolute top-4 left-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-full text-xs font-bold text-slate-800 shadow-sm">Religious Sites</div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-1">
+                        <h4 class="text-2xl font-bold text-slate-900 leading-tight">11. Bhagwati Temple</h4>
+                        <div class="flex items-center gap-1 bg-orange-50 text-orange-700 px-2 py-1 rounded-lg text-sm font-bold ml-2">
+                            <span>★</span> 4.4
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 mb-6 font-medium">(9 reviews)</p>
+                    <div class="bg-stone-50 p-5 rounded-2xl border border-stone-100 flex-grow relative">
+                        <span class="absolute -top-3 left-4 text-4xl text-orange-300 font-serif">"</span>
+                        <p class="text-slate-600 text-sm italic mb-3 relative z-10 leading-relaxed line-clamp-3">Old temple built of majirity of wooden structural members, huge pillars recently painted n the temple is worshipped for...</p>
+                        <p class="text-xs font-semibold text-slate-400 text-right">- By vinayv354</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12. Chivla Beach -->
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col card-lift">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Chivla Beach">
+                    <div class="absolute top-4 left-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-full text-xs font-bold text-slate-800 shadow-sm">Beaches</div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-1">
+                        <h4 class="text-2xl font-bold text-slate-900">12. Chivla Beach</h4>
+                        <div class="flex items-center gap-1 bg-orange-50 text-orange-700 px-2 py-1 rounded-lg text-sm font-bold">
+                            <span>★</span> 4.3
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 mb-6 font-medium">(6 reviews)</p>
+                    <div class="bg-stone-50 p-5 rounded-2xl border border-stone-100 flex-grow relative">
+                        <span class="absolute -top-3 left-4 text-4xl text-orange-300 font-serif">"</span>
+                        <p class="text-slate-600 text-sm italic mb-3 relative z-10 leading-relaxed line-clamp-3">scenic and unspoilt beach</p>
+                        <p class="text-xs font-semibold text-slate-400 text-right">- By Rishi73</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Other Top Attractions Around Malvan Section -->
+    <section class="py-24 px-6 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-orange-500 rounded-full blur-[150px] opacity-20 -translate-y-1/2 translate-x-1/2"></div>
+        <div class="max-w-7xl mx-auto relative z-10">
+            <h3 class="text-3xl md:text-4xl font-bold mb-12 border-l-4 border-orange-500 pl-4">Other Top Attractions around Malvan</h3>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Baga Beach -->
+                <div class="bg-white/10 border border-white/20 p-6 rounded-2xl hover:bg-white/20 transition backdrop-blur-sm">
+                    <h4 class="text-xl font-bold mb-2">Baga Beach</h4>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="text-yellow-400 text-sm">★★★★☆</span>
+                        <span class="text-slate-400 text-xs">(7,341)</span>
+                    </div>
+                    <p class="text-orange-300 text-sm font-semibold mb-1">Beaches</p>
+                    <p class="text-slate-300 text-sm">63 km away • Baga</p>
+                </div>
+
+                <!-- Arambol Beach -->
+                <div class="bg-white/10 border border-white/20 p-6 rounded-2xl hover:bg-white/20 transition backdrop-blur-sm">
+                    <h4 class="text-xl font-bold mb-2">Arambol Beach</h4>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="text-yellow-400 text-sm">★★★★☆</span>
+                        <span class="text-slate-400 text-xs">(1,435)</span>
+                    </div>
+                    <p class="text-orange-300 text-sm font-semibold mb-1">Beaches</p>
+                    <p class="text-slate-300 text-sm">49 km away • Arambol</p>
+                </div>
+
+                <!-- Sheek Emporium -->
+                <div class="bg-white/10 border border-white/20 p-6 rounded-2xl hover:bg-white/20 transition backdrop-blur-sm">
+                    <h4 class="text-xl font-bold mb-2 leading-tight">Sheek Emporium Boutique</h4>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="text-yellow-400 text-sm">★★★★★</span>
+                        <span class="text-slate-400 text-xs">(807)</span>
+                    </div>
+                    <p class="text-orange-300 text-sm font-semibold mb-1">Gift Shops</p>
+                    <p class="text-slate-300 text-sm">69 km away • Candolim</p>
+                </div>
+
+                <!-- Candolim Beach -->
+                <div class="bg-white/10 border border-white/20 p-6 rounded-2xl hover:bg-white/20 transition backdrop-blur-sm">
+                    <h4 class="text-xl font-bold mb-2">Candolim Beach</h4>
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="text-yellow-400 text-sm">★★★★☆</span>
+                        <span class="text-slate-400 text-xs">(1,841)</span>
+                    </div>
+                    <p class="text-orange-300 text-sm font-semibold mb-1">Beaches</p>
+                    <p class="text-slate-300 text-sm">68 km away • Bardez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-950 text-slate-400 py-20 px-6 relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-px bg-gradient-to-r from-transparent via-orange-500/50 to-transparent"></div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-16 relative z-10">
+            <div>
+                <img src="samadhan_logo.png" alt="Footer Logo" class="h-16 mb-6 brightness-0 invert opacity-90">
+                <p class="text-sm leading-relaxed text-slate-400">Nestled in Wairy, Malvan, we offer the best Konkani hospitality with a sea-touch experience. Perfect for families and couples looking for a peaceful getaway.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-xl mb-6">Visit Us</h4>
+                <div class="space-y-3 text-sm">
+                    <p class="flex items-start gap-3">
+                        <span class="text-orange-500 mt-0.5">📍</span>
+                        <span>Wairy-Tarkarli Road, Malvan, Maharashtra</span>
+                    </p>
+                    <p class="flex items-start gap-3">
+                        <span class="text-orange-500 mt-0.5">🚂</span>
+                        <span>Nearest Station: Kudal (30 km)</span>
+                    </p>
+                    <p class="flex items-start gap-3">
+                        <span class="text-orange-500 mt-0.5">✈️</span>
+                        <span>Nearest Airport: Chipi</span>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-xl mb-6">Contact For Booking</h4>
+                <div class="space-y-3 text-sm mb-8">
+                    <p class="flex items-center gap-3">
+                        <span class="text-orange-500">📞</span>
+                        <a href="tel:+919137234477" class="hover:text-orange-400 transition text-slate-300">+91 91372 34477</a>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="text-orange-500">💬</span>
+                        <a href="https://wa.me/919137234477?text=Hi,%20I%20have%20an%20inquiry%20about%20Samadhan%20Resort." class="hover:text-green-400 transition text-slate-300" target="_blank">WhatsApp: +91 91372 34477</a>
+                    </p>
+                </div>
+                
+                <h5 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Policies</h5>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs">9:30 AM Checkout</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs">11:00 AM Check-in</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs">50% Advance Required</span>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 pt-8 text-center text-xs text-slate-600 border-t border-white/5">
+            &copy; 2026 Samadhan Beach Resort. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
