@@ -1,1 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Sports | Samadhan Beach Resort Malvan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(15,23,42,0.4) 0%, rgba(15,23,42,0.7) 100%);
+        }
+        .section-pattern {
+            background-image: radial-gradient(circle at 1px 1px, rgba(234,88,12,0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-slate-800">
 
+    <nav class="glass fixed w-full z-50 top-0 border-b border-stone-200/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center gap-3">
+                    <img src="samadhan_logo.png" alt="Samadhan Logo" class="h-12">
+                    <span class="text-xl font-bold text-slate-900 hidden sm:block tracking-tight">Samadhan Resort</span>
+                </div>
+                <div class="hidden lg:flex space-x-8 text-sm items-center font-medium text-slate-600">
+                    <a href="index.html" class="hover:text-orange-600 transition">Home</a>
+                    <a href="about.html" class="hover:text-orange-600 transition">About Us</a>
+                    <a href="water-sports.html" class="text-orange-600 font-semibold transition">Water Sports</a>
+                    <a href="things-to-do.html" class="hover:text-orange-600 transition">Things to do</a>
+                    <a href="gallery.html" class="hover:text-orange-600 transition">Gallery</a>
+                    <a href="#contact" class="hover:text-orange-600 transition">Contact Us</a>
+                </div>
+                <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20make%20a%20general%20booking%20inquiry." target="_blank" 
+                   class="bg-gradient-to-r from-orange-600 to-red-600 text-white px-7 py-2.5 rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                   Book Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative h-[60vh] flex items-center justify-center text-center overflow-hidden mt-16">
+        <img src="scuba.png" class="absolute top-0 left-0 w-full h-full object-cover z-0" alt="Water Sports Background">
+        <div class="absolute top-0 left-0 w-full h-full hero-overlay z-10"></div>
+        
+        <div class="relative z-20 text-white px-4 max-w-4xl mt-10">
+            <p class="text-sm md:text-base uppercase tracking-[0.3em] font-medium text-orange-200 mb-4">Adventure Awaits</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 drop-shadow-2xl leading-tight">Thrilling Water Sports</h1>
+            <p class="text-lg md:text-xl font-light text-stone-200 max-w-2xl mx-auto leading-relaxed">Dive into the crystal clear waters of Malvan. We arrange the safest and most exciting activities through our trusted partners.</p>
+        </div>
+    </section>
+
+    <div class="bg-slate-900 text-white py-8 border-b border-white/10 relative z-20 shadow-xl">
+        <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-6 text-sm font-medium">
+            <div class="flex items-center gap-3">
+                <span class="text-orange-500 text-2xl">🦺</span> Certified Instructors
+            </div>
+            <div class="hidden md:block w-px h-6 bg-white/20"></div>
+            <div class="flex items-center gap-3">
+                <span class="text-orange-500 text-2xl">🛡️</span> High-Quality Safety Gear
+            </div>
+            <div class="hidden md:block w-px h-6 bg-white/20"></div>
+            <div class="flex items-center gap-3">
+                <span class="text-orange-500 text-2xl">🚤</span> Modern Equipment
+            </div>
+            <div class="hidden md:block w-px h-6 bg-white/20"></div>
+            <div class="flex items-center gap-3">
+                <span class="text-orange-500 text-2xl">📸</span> Underwater Photography Included
+            </div>
+        </div>
+    </div>
+
+    <section class="py-24 px-6 max-w-7xl mx-auto section-pattern">
+        <div class="text-center mb-20">
+            <span class="text-orange-600 font-semibold uppercase tracking-wider text-sm">Choose Your Adventure</span>
+            <h2 class="text-5xl font-bold text-slate-900 mt-3">Individual Activities</h2>
+            <div class="h-1 w-24 bg-gradient-to-r from-orange-500 to-red-500 mx-auto mt-6 rounded-full"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-12">
+            
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col md:flex-row card-lift">
+                <div class="md:w-2/5 h-64 md:h-auto overflow-hidden">
+                    <img src="scuba.png" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Scuba Diving">
+                </div>
+                <div class="p-8 md:w-3/5 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-2xl font-bold text-slate-900">Scuba Diving</h3>
+                        </div>
+                        <p class="text-slate-600 leading-relaxed mb-4 text-sm">Experience the magic of the underwater world. Explore vibrant coral reefs and swim alongside colorful marine life with our certified diving instructors.</p>
+                        <ul class="space-y-2 text-sm text-slate-500 font-medium mb-6">
+                            <li>✓ Training session included</li>
+                            <li>✓ Free underwater video</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20Scuba%20Diving." target="_blank" 
+                       class="block text-center bg-slate-900 text-white px-4 py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors duration-300">
+                       Book Scuba Diving
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col md:flex-row card-lift">
+                <div class="md:w-2/5 h-64 md:h-auto overflow-hidden">
+                    <img src="parasailing.png" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Parasailing">
+                </div>
+                <div class="p-8 md:w-3/5 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Parasailing</h3>
+                        <p class="text-slate-600 leading-relaxed mb-4 text-sm">Get a bird's eye view of the stunning Malvan coastline. Soar high above the Arabian Sea and feel the ultimate adrenaline rush in complete safety.</p>
+                        <ul class="space-y-2 text-sm text-slate-500 font-medium mb-6">
+                            <li>✓ Safe winch-boat launch</li>
+                            <li>✓ Panoramic ocean views</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20Parasailing." target="_blank" 
+                       class="block text-center bg-slate-900 text-white px-4 py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors duration-300">
+                       Book Parasailing
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col md:flex-row card-lift">
+                <div class="md:w-2/5 h-64 md:h-auto overflow-hidden">
+                    <img src="bananaboat.png" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Banana Boat">
+                </div>
+                <div class="p-8 md:w-3/5 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Banana Boat Ride</h3>
+                        <p class="text-slate-600 leading-relaxed mb-4 text-sm">The perfect group activity! Hold on tight as our speedboats pull you across the waves. Expect to get wet and have a lot of laughs.</p>
+                        <ul class="space-y-2 text-sm text-slate-500 font-medium mb-6">
+                            <li>✓ Perfect for families & groups</li>
+                            <li>✓ Life jackets provided</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20the%20Banana%20Boat%20Ride." target="_blank" 
+                       class="block text-center bg-slate-900 text-white px-4 py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors duration-300">
+                       Book Banana Boat
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col md:flex-row card-lift">
+                <div class="md:w-2/5 h-64 md:h-auto overflow-hidden">
+                    <img src="boating.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Bumper Ride">
+                </div>
+                <div class="p-8 md:w-3/5 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Bumper Ride</h3>
+                        <p class="text-slate-600 leading-relaxed mb-4 text-sm">An extreme thrill ride where you sit in a tube towed by a speedboat. Feel every bump and wave as you race across the water's surface.</p>
+                        <ul class="space-y-2 text-sm text-slate-500 font-medium mb-6">
+                            <li>✓ High-speed thrill</li>
+                            <li>✓ Maximum excitement</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20the%20Bumper%20Ride." target="_blank" 
+                       class="block text-center bg-slate-900 text-white px-4 py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors duration-300">
+                       Book Bumper Ride
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-stone-100">
+        <div class="max-w-5xl mx-auto bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row items-center border border-slate-700">
+            <div class="p-12 md:w-2/3 text-white">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-orange-600 text-xs font-bold uppercase tracking-wider mb-4">Most Popular</span>
+                <h3 class="text-4xl font-bold mb-4">Malvan Mega Combo</h3>
+                <p class="text-slate-300 mb-6 text-lg">Make the most of your day! Book our all-in-one water sports package and save big.</p>
+                <div class="flex flex-wrap gap-3 mb-8">
+                    <span class="bg-white/10 px-3 py-1 rounded-full text-sm">Scuba Diving</span>
+                    <span class="bg-white/10 px-3 py-1 rounded-full text-sm">Parasailing</span>
+                    <span class="bg-white/10 px-3 py-1 rounded-full text-sm">Banana Boat</span>
+                    <span class="bg-white/10 px-3 py-1 rounded-full text-sm">Bumper Ride</span>
+                    <span class="bg-white/10 px-3 py-1 rounded-full text-sm">Jet Ski</span>
+                </div>
+                <a href="https://wa.me/919137234477?text=Hi,%20I%20would%20like%20to%20book%20the%20Mega%20Water%20Sports%20Combo." target="_blank" 
+                   class="inline-flex bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-3.5 rounded-full font-semibold hover:shadow-lg hover:shadow-orange-500/30 transition-all duration-300 hover:scale-105">
+                   Inquire About Combo Package
+                </a>
+            </div>
+            <div class="md:w-1/3 h-full hidden md:block">
+                <img src="parasailing.png" class="w-full h-full object-cover opacity-80 mix-blend-overlay" alt="Combo Package">
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-950 text-slate-400 py-20 px-6 relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-px bg-gradient-to-r from-transparent via-orange-500/50 to-transparent"></div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-16 relative z-10">
+            <div>
+                <img src="samadhan_logo.png" alt="Footer Logo" class="h-16 mb-6 brightness-0 invert opacity-90">
+                <p class="text-sm leading-relaxed text-slate-400">Nestled in Wairy, Malvan, we offer the best Konkani hospitality with a sea-touch experience. Perfect for families and couples looking for a peaceful getaway.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-xl mb-6">Visit Us</h4>
+                <div class="space-y-3 text-sm">
+                    <p class="flex items-start gap-3">
+                        <span class="text-orange-500 mt-0.5">📍</span>
+                        <span>Wairy-Tarkarli Road, Malvan, Maharashtra</span>
+                    </p>
+                    <p class="flex items-start gap-3">
+                        <span class="text-orange-500 mt-0.5">🚂</span>
+                        <span>Nearest Station: Kudal (30 km)</span>
+                    </p>
+                    <p class="flex items-start gap-3">
+                        <span class="text-orange-500 mt-0.5">✈️</span>
+                        <span>Nearest Airport: Chipi</span>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-xl mb-6">Contact For Booking</h4>
+                <div class="space-y-3 text-sm mb-8">
+                    <p class="flex items-center gap-3">
+                        <span class="text-orange-500">📞</span>
+                        <a href="tel:+919137234477" class="hover:text-orange-400 transition text-slate-300">+91 91372 34477</a>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="text-orange-500">💬</span>
+                        <a href="https://wa.me/919137234477?text=Hi,%20I%20have%20an%20inquiry%20about%20Samadhan%20Resort." class="hover:text-green-400 transition text-slate-300" target="_blank">WhatsApp: +91 91372 34477</a>
+                    </p>
+                </div>
+                
+                <h5 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Policies</h5>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs">9:30 AM Checkout</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs">11:00 AM Check-in</span>
+                    <span class="bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs">50% Advance Required</span>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 pt-8 text-center text-xs text-slate-600 border-t border-white/5">
+            &copy; 2026 Samadhan Beach Resort. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
